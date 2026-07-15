@@ -14,6 +14,7 @@ from rebuild_v117_scientific_revision import ROOT, masks
 
 DATA = ROOT / "_outputs/v117/data/fpv_reference_inventory_v117.parquet"
 REPORTS = ROOT / "_outputs/v117/reports"
+WOOLWAY_PUBLIC = ROOT / "_outputs/v110/data/woolway_public_lake_info.parquet"
 
 
 def summarize(mask: np.ndarray, frame: pd.DataFrame) -> tuple[int, float]:
@@ -141,6 +142,49 @@ def engineering_sensitivity(frame: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def yield_benchmark_density(frame: pd.DataFrame, bins: int = 65) -> pd.DataFrame:
+    """Aggregate the Woolway comparison for licence-safe figure rebuilding.
+
+    The active figure needs the two-dimensional density, not row identities.
+    Publishing fixed bins keeps the panel reproducible without redistributing
+    the upstream row-level Woolway columns under an unverified blanket licence.
+    """
+    published = pd.read_parquet(
+        WOOLWAY_PUBLIC,
+        columns=["hylak_id", "woolway_fpv_output_kwh"],
+    )
+    present = frame.loc[
+        frame["hylak_id"].notna(),
+        ["hylak_id", "annual_specific_yield_kwh_kwp_v117"],
+    ].copy()
+    present["hylak_id"] = present["hylak_id"].astype(int)
+    joined = present.merge(published, on="hylak_id", validate="one_to_one").dropna()
+    joined = joined.loc[joined["woolway_fpv_output_kwh"].gt(0)]
+    x = joined["woolway_fpv_output_kwh"].to_numpy(float)
+    y = joined["annual_specific_yield_kwh_kwp_v117"].to_numpy(float)
+    lower = float(min(x.min(), y.min()))
+    upper = float(max(x.max(), y.max()))
+    counts, x_edges, y_edges = np.histogram2d(
+        x,
+        y,
+        bins=bins,
+        range=[[lower, upper], [lower, upper]],
+    )
+    rows = []
+    for x_index in range(bins):
+        for y_index in range(bins):
+            rows.append(
+                {
+                    "x_left_kwh_kwp": float(x_edges[x_index]),
+                    "x_right_kwh_kwp": float(x_edges[x_index + 1]),
+                    "y_bottom_kwh_kwp": float(y_edges[y_index]),
+                    "y_top_kwh_kwp": float(y_edges[y_index + 1]),
+                    "count": int(counts[x_index, y_index]),
+                }
+            )
+    return pd.DataFrame(rows)
+
+
 def main() -> None:
     gate_path = REPORTS / "consolidated_validation_gate_v117.json"
     gate = json.loads(gate_path.read_text(encoding="utf-8"))
@@ -153,6 +197,7 @@ def main() -> None:
         "sequential_constraint_summary_v117.csv": sequential_summary(frame),
         "ice_source_summary_v117.csv": ice_source_summary(frame),
         "engineering_sensitivity_v117.csv": engineering_sensitivity(frame),
+        "yield_benchmark_density_v117.csv": yield_benchmark_density(frame),
     }
     for name, table in products.items():
         table.to_csv(REPORTS / name, index=False)

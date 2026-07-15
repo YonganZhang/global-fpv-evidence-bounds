@@ -19,7 +19,6 @@ ROOT = Path(__file__).resolve().parents[2]
 REPORTS = ROOT / "_outputs/v117/reports"
 INVENTORY = ROOT / "_outputs/v117/data/fpv_reference_inventory_v117.parquet"
 WORLD = ROOT / "_outputs/v117/raw/natural_earth_admin0/unpacked/ne_10m_admin_0_countries.shp"
-WOOLWAY = ROOT / "_outputs/v110/data/woolway_public_lake_info.parquet"
 OUT = ROOT / "paper/figures/v2026-07-15_v117_rebuild/main"
 OUT.mkdir(parents=True, exist_ok=True)
 
@@ -82,6 +81,7 @@ def load() -> dict[str, object]:
         "ice_sources": read_csv("ice_source_summary_v117.csv"),
         "wind": read_csv("wind_sensitivity_v117.csv"),
         "yield_regions": read_csv("yield_benchmark_by_continent_v117.csv"),
+        "yield_density": read_csv("yield_benchmark_density_v117.csv"),
         "sequential": read_csv("sequential_constraint_summary_v117.csv"),
         "evidence": read_csv("evidence_state_summary_v117.csv"),
         "glev": read_csv("glev_criterion_sensitivity_v117.csv"),
@@ -205,21 +205,28 @@ def draw_fig2(data: dict[str, object]) -> None:
     save(fig, "Fig2")
 
 
-def yield_comparison(frame: pd.DataFrame) -> pd.DataFrame:
-    pub = pd.read_parquet(WOOLWAY, columns=["hylak_id", "woolway_fpv_output_kwh"])
-    ours = frame.loc[frame["hylak_id"].notna(), ["hylak_id", "annual_specific_yield_kwh_kwp_v117"]].copy()
-    ours["hylak_id"] = ours["hylak_id"].astype(int)
-    joined = ours.merge(pub, on="hylak_id", validate="one_to_one").dropna()
-    return joined[joined["woolway_fpv_output_kwh"].gt(0)]
-
-
 def draw_fig3(data: dict[str, object]) -> None:
     fig, axes = plt.subplots(2, 2, figsize=(7.2, 7.2), constrained_layout=True)
     ax1, ax2, ax3, ax4 = axes.flat
-    comp = yield_comparison(data["frame"])
-    ax1.hexbin(comp["woolway_fpv_output_kwh"], comp["annual_specific_yield_kwh_kwp_v117"], gridsize=65, mincnt=1, bins="log", cmap=mpl.colors.LinearSegmentedColormap.from_list("density", [PALE, SKY, BLUE, NAVY]))
-    lo = min(comp["woolway_fpv_output_kwh"].min(), comp["annual_specific_yield_kwh_kwp_v117"].min())
-    hi = max(comp["woolway_fpv_output_kwh"].max(), comp["annual_specific_yield_kwh_kwp_v117"].max())
+    density = data["yield_density"]
+    x_edges = np.r_[np.sort(density["x_left_kwh_kwp"].unique()), density["x_right_kwh_kwp"].max()]
+    y_edges = np.r_[np.sort(density["y_bottom_kwh_kwp"].unique()), density["y_top_kwh_kwp"].max()]
+    counts = density.pivot(
+        index="y_bottom_kwh_kwp",
+        columns="x_left_kwh_kwp",
+        values="count",
+    ).sort_index().sort_index(axis=1).to_numpy(dtype=float, copy=True)
+    counts[counts == 0] = np.nan
+    ax1.pcolormesh(
+        x_edges,
+        y_edges,
+        counts,
+        norm=mpl.colors.LogNorm(vmin=1, vmax=np.nanmax(counts)),
+        cmap=mpl.colors.LinearSegmentedColormap.from_list("density", [PALE, SKY, BLUE, NAVY]),
+        shading="flat",
+    )
+    lo = min(x_edges.min(), y_edges.min())
+    hi = max(x_edges.max(), y_edges.max())
     ax1.plot([lo, hi], [lo, hi], color=RED, linestyle="--", linewidth=0.8)
     ax1.set_xlabel("Published yield (kWh kWp$^{-1}$ yr$^{-1}$)")
     ax1.set_ylabel("Present screen (kWh kWp$^{-1}$ yr$^{-1}$)")

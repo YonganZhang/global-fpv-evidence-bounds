@@ -80,7 +80,7 @@ def main() -> None:
     checks["xiaoyuan_credit_present"] = "Xiaoyuan Li: Investigation, Validation" in texts["backmatter.tex"]
     checks["public_repository_declared"] = (
         "https://github.com/YonganZhang/global-fpv-evidence-bounds" in texts["backmatter.tex"]
-        and "v1.0.1-v118" in texts["backmatter.tex"]
+        and "v1.0.2-v118" in texts["backmatter.tex"]
     )
     placeholders = ["[username]", "to be issued upon acceptance", "persistent accession must be inserted", "repository DOI/accession"]
     placeholder_hits = [value for value in placeholders if value.lower() in joined.lower()]
@@ -91,7 +91,7 @@ def main() -> None:
 
     open_gate_path = ROOT / "_outputs/v118/open_repository/OPEN_RELEASE_VALIDATION.json"
     open_gate = json.loads(open_gate_path.read_text(encoding="utf-8")) if open_gate_path.exists() else {}
-    checks["open_release_gate_12_of_12"] = open_gate.get("status") == "pass" and open_gate.get("passed") == 12
+    checks["open_release_gate_14_of_14"] = open_gate.get("status") == "pass" and open_gate.get("passed") == 14
 
     abstract = plain_tex(texts["abstract.tex"])
     abstract_words = len(re.findall(r"\b[\w$%.-]+\b", abstract))

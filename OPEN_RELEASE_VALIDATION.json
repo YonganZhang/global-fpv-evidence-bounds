@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "passed": 12,
-  "total": 12,
+  "passed": 14,
+  "total": 14,
   "checks": {
     "required_release_files": true,
     "open_table_199976_unique": true,
@@ -13,6 +13,8 @@
     "six_author_order": true,
     "no_machine_specific_source_paths": true,
     "no_embedded_credentials": true,
+    "figure_helper_accepts_subplot_scaling": true,
+    "natural_earth_basemap_bundled": true,
     "source_licence_manifest": true,
     "release_checksums": true
   },
@@ -27,6 +29,11 @@
       "Yuntian Chen": 484,
       "Jinyue Yan": 577
     },
+    "normalize_fonts_parameters": [
+      "figure",
+      "sizes",
+      "scale_by_subplot"
+    ],
     "checksum_failures": []
   }
 }

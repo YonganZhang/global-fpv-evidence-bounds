@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
+import inspect
 import json
 import re
 from pathlib import Path
@@ -38,9 +40,14 @@ def main() -> None:
         "data/open/fpv_reference_inventory_open_v117.parquet",
         "data/odbl/fpv_osm_powerline_derivatives_v117.parquet",
         "results/level_summary_v117.csv", "results/consolidated_validation_gate_v117.json",
+        "results/yield_benchmark_density_v117.csv",
         "paper/draft/frontmatter.tex", "paper/draft/main_中文版_v118_审阅稿.md",
         "src/rebuild/rebuild_v117_scientific_revision.py",
         "src/figures/draw_v117_manuscript_figures.py", "checksums.sha256",
+        "_outputs/v117/raw/natural_earth_admin0/unpacked/ne_10m_admin_0_countries.shp",
+        "_outputs/v117/raw/natural_earth_admin0/unpacked/ne_10m_admin_0_countries.dbf",
+        "_outputs/v117/raw/natural_earth_admin0/unpacked/ne_10m_admin_0_countries.shx",
+        "_outputs/v117/raw/natural_earth_admin0/unpacked/ne_10m_admin_0_countries.prj",
     ]
     missing = [name for name in required if not (repo / name).is_file()]
     details["missing_files"] = missing
@@ -94,6 +101,26 @@ def main() -> None:
     )
     checks["no_machine_specific_source_paths"] = not re.search(r"/mnt/data|/home/|\.codex", source_text)
     checks["no_embedded_credentials"] = not re.search(r"ghp_[A-Za-z0-9]+|api[_-]?key\s*=|password\s*=|secret\s*=", source_text, re.I)
+
+    helper_path = repo / "src/figures/figure_standards.py"
+    helper_spec = importlib.util.spec_from_file_location("release_figure_standards", helper_path)
+    helper_module = importlib.util.module_from_spec(helper_spec) if helper_spec else None
+    if helper_spec and helper_spec.loader and helper_module:
+        helper_spec.loader.exec_module(helper_module)
+        helper_parameters = inspect.signature(helper_module.normalize_fonts).parameters
+    else:
+        helper_parameters = {}
+    details["normalize_fonts_parameters"] = list(helper_parameters)
+    checks["figure_helper_accepts_subplot_scaling"] = "scale_by_subplot" in helper_parameters
+    checks["natural_earth_basemap_bundled"] = all(
+        (repo / "_outputs/v117/raw/natural_earth_admin0/unpacked" / name).is_file()
+        for name in [
+            "ne_10m_admin_0_countries.shp",
+            "ne_10m_admin_0_countries.dbf",
+            "ne_10m_admin_0_countries.shx",
+            "ne_10m_admin_0_countries.prj",
+        ]
+    )
 
     sources = json.loads((repo / "data/SOURCES.json").read_text(encoding="utf-8"))
     checks["source_licence_manifest"] = len(sources) >= 14 and all({"dataset", "url", "licence", "redistribution"} <= set(item) for item in sources)

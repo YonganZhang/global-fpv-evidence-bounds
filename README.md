@@ -13,6 +13,7 @@ The audited inventory contains 199,976 unique large lakes and mapped reservoirs.
 - a 199,976-row licence-compatible processed table in `data/open/`;
 - an explicitly separated ODbL power-line-distance derivative in `data/odbl/`;
 - all publication figures and figure-ready outputs.
+- the public-domain Natural Earth admin-0 basemap required by the map builder.
 
 WDPA/LandScan-derived row-level fields are not downloadable here because upstream terms do not permit a blanket open-data relicence. They are named in `data/excluded_row_level_fields.csv`, and the complete reconstruction code and source-acquisition manifest are included. This is a legal boundary, not a hidden analytical omission.
 

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, cite the software/data release and the associated paper."
 title: "Global FPV evidence-bounded resource assessment"
 type: software
-version: 1.0.1-v118
+version: 1.0.2-v118
 date-released: 2026-07-15
 repository-code: "https://github.com/YonganZhang/global-fpv-evidence-bounds"
 license: MIT

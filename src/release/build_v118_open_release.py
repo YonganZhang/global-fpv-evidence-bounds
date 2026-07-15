@@ -178,6 +178,7 @@ The root MIT licence applies to code only.
 - `data/open/` contains an author-assembled research output released under CC BY 4.0, subject to attribution of the upstream open sources listed in `data/SOURCES.json`.
 - `data/odbl/` is a separate OpenStreetMap-derived database released under ODbL 1.0. Attribute © OpenStreetMap contributors and retain share-alike terms.
 - `results/` and `figures/` are author-created aggregate results and publication graphics released under CC BY 4.0.
+- `_outputs/v117/raw/natural_earth_admin0/` contains the public-domain Natural Earth admin-0 basemap required to reproduce the map figure.
 - WDPA- and LandScan-derived row-level fields are deliberately absent. Protected Planet prohibits redistribution/sublicensing without permission; the LandScan permission applicable to row-level derivatives was not established. See `data/excluded_row_level_fields.csv`.
 
 No file in this repository changes or overrides an upstream provider's terms.""")
@@ -192,13 +193,13 @@ No file in this repository changes or overrides an upstream provider's terms."""
 *.log
 *.out
 _outputs/v117/data/fpv_reference_inventory_v117.parquet
-raw/
+/raw/
 """)
     write(out / "CITATION.cff", f"""cff-version: 1.2.0
 message: \"If you use this repository, cite the software/data release and the associated paper.\"
 title: \"Global FPV evidence-bounded resource assessment\"
 type: software
-version: 1.0.1-v118
+version: 1.0.2-v118
 date-released: 2026-07-15
 repository-code: \"{repository}\"
 license: MIT
@@ -230,7 +231,7 @@ authors:
         "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
         "@type": "SoftwareSourceCode",
         "name": "Global FPV evidence-bounded resource assessment",
-        "version": "1.0.1-v118",
+        "version": "1.0.2-v118",
         "codeRepository": repository,
         "license": "https://spdx.org/licenses/MIT",
         "datePublished": "2026-07-15",
@@ -288,6 +289,7 @@ The audited inventory contains 199,976 unique large lakes and mapped reservoirs.
 - a 199,976-row licence-compatible processed table in `data/open/`;
 - an explicitly separated ODbL power-line-distance derivative in `data/odbl/`;
 - all publication figures and figure-ready outputs.
+- the public-domain Natural Earth admin-0 basemap required by the map builder.
 
 WDPA/LandScan-derived row-level fields are not downloadable here because upstream terms do not permit a blanket open-data relicence. They are named in `data/excluded_row_level_fields.csv`, and the complete reconstruction code and source-acquisition manifest are included. This is a legal boundary, not a hidden analytical omission.
 
@@ -335,7 +337,7 @@ The repository includes the v109–v117 pipeline scripts because the final inven
 """)
     write(out / "pyproject.toml", """[project]
 name = "global-fpv-evidence-bounds"
-version = "1.0.1"
+version = "1.0.2"
 description = "Evidence-bounded global floating photovoltaic resource assessment"
 requires-python = ">=3.10"
 dependencies = [
@@ -391,6 +393,10 @@ def copy_assets(out: Path) -> None:
     copy_file(ROOT / "_pipelines/fpv-rebuild-v117.yml", out / "_pipelines/fpv-rebuild-v117.yml")
     copy_tree(ROOT / "_outputs/v117/reports", out / "results")
     copy_tree(ROOT / "_outputs/v117/reports", out / "_outputs/v117/reports")
+    copy_tree(
+        ROOT / "_outputs/v117/raw/natural_earth_admin0/unpacked",
+        out / "_outputs/v117/raw/natural_earth_admin0/unpacked",
+    )
     copy_tree(ROOT / "paper/figures/v2026-07-15_v117_rebuild/main", out / "paper/figures/v2026-07-15_v117_rebuild/main")
     copy_tree(ROOT / "paper/figures/v2026-07-15_v117_rebuild/main", out / "figures")
 

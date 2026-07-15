@@ -31,25 +31,52 @@ def _is_country_code(text: str) -> bool:
     return bool(re.match(r"^[A-Z]{2,3}$", value)) and "\n" not in value
 
 
-def normalize_fonts(figure, sizes: dict[str, float] | None = None) -> None:
-    """Normalize all existing text objects before a figure is exported."""
+def _scale_for_axis(axis, base_size: float) -> float:
+    """Scale text gently for small subplots without shrinking panel labels."""
+    try:
+        relative_width = axis.get_position().width
+        return base_size * (0.8 + 0.2 * relative_width)
+    except (AttributeError, TypeError, ValueError):
+        return base_size
+
+
+def normalize_fonts(
+    figure,
+    sizes: dict[str, float] | None = None,
+    scale_by_subplot: bool = False,
+) -> None:
+    """Normalize all existing text objects before a figure is exported.
+
+    The optional subplot scaling matches the public builder's call signature
+    and keeps the repository-local helper compatible with the canonical
+    publication standard without depending on a user-specific Codex path.
+    """
     font_sizes = {**FONT_SIZES, **(sizes or {})}
     if getattr(figure, "_suptitle", None) is not None:
         figure._suptitle.set_fontsize(font_sizes["title"])
 
     for axis in figure.get_axes():
+        def size(key: str) -> float:
+            base = font_sizes[key]
+            return _scale_for_axis(axis, base) if scale_by_subplot else base
+
         if axis.title.get_text():
-            axis.title.set_fontsize(font_sizes["title"])
-        axis.xaxis.label.set_fontsize(font_sizes["axis_label"])
-        axis.yaxis.label.set_fontsize(font_sizes["axis_label"])
-        axis.tick_params(axis="both", which="major", labelsize=font_sizes["tick"])
+            axis.title.set_fontsize(size("title"))
+        axis.xaxis.label.set_fontsize(size("axis_label"))
+        axis.yaxis.label.set_fontsize(size("axis_label"))
+        axis.tick_params(axis="both", which="major", labelsize=size("tick"))
 
         legend = axis.get_legend()
         if legend:
             for item in legend.get_texts():
-                item.set_fontsize(font_sizes["legend"])
+                item.set_fontsize(size("legend"))
             if legend.get_title() and legend.get_title().get_text():
-                legend.get_title().set_fontsize(font_sizes["legend"])
+                legend.get_title().set_fontsize(size("legend"))
+
+        for container in axis.containers:
+            for item in container.get_children():
+                if hasattr(item, "set_fontsize"):
+                    item.set_fontsize(size("annotation"))
 
         for item in axis.texts:
             value = item.get_text().strip()
@@ -59,9 +86,9 @@ def normalize_fonts(figure, sizes: dict[str, float] | None = None) -> None:
                 item.set_fontsize(font_sizes["panel_label"])
                 item.set_fontweight("bold")
             elif _is_country_code(value):
-                item.set_fontsize(font_sizes["small"])
+                item.set_fontsize(size("small"))
             else:
-                item.set_fontsize(font_sizes["annotation"])
+                item.set_fontsize(size("annotation"))
 
         if getattr(axis, "_colorbar_info", None) is not None or axis.get_label() == "<colorbar>":
             axis.tick_params(labelsize=font_sizes["tick"])
