@@ -103,6 +103,6 @@ L2 的未知量具有明确空间来源：区间宽度主要集中在没有完�
 ## 投稿前仍需作者确认
 
 - 基金名称和项目编号（17号窗口论文仍为笼统占位，没有可复用的真实基金号）；
-- 数据/代码公开仓库已设为 `https://github.com/YonganZhang/global-fpv-evidence-bounds`，版本号为 `v1.0.0-v118`；Zenodo DOI 如需使用仍待后续登记；
+- 数据/代码公开仓库已设为 `https://github.com/YonganZhang/global-fpv-evidence-bounds`，版本号为 `v1.0.1-v118`；Zenodo DOI 如需使用仍待后续登记；
 - 六位作者顺序已更新为 Yongan Zhang、Yujie Jiang、Xiaoyuan Li、Zhiling Guo、Yuntian Chen、Jinyue Yan；Yujie Jiang 与 Xiaoyuan Li 的邮箱、ORCID和最终 CRediT 仍需确认；
 - 全体作者同意投稿与独家投稿声明。

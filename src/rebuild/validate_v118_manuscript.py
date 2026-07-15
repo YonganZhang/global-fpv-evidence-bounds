@@ -80,7 +80,7 @@ def main() -> None:
     checks["xiaoyuan_credit_present"] = "Xiaoyuan Li: Investigation, Validation" in texts["backmatter.tex"]
     checks["public_repository_declared"] = (
         "https://github.com/YonganZhang/global-fpv-evidence-bounds" in texts["backmatter.tex"]
-        and "v1.0.0-v118" in texts["backmatter.tex"]
+        and "v1.0.1-v118" in texts["backmatter.tex"]
     )
     placeholders = ["[username]", "to be issued upon acceptance", "persistent accession must be inserted", "repository DOI/accession"]
     placeholder_hits = [value for value in placeholders if value.lower() in joined.lower()]

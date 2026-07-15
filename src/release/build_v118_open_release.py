@@ -125,7 +125,11 @@ def build_data(out: Path) -> None:
     for column in sorted(GRAND_COLUMNS):
         exclusions.append({"column": column, "source": "GRanD v1.1", "reason": "raw identifier/attribute redistribution licence was not verified for the local version", "public_route": "download GRanD from Global Dam Watch/USGS and rebuild"})
     with (out / "data/excluded_row_level_fields.csv").open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=["column", "source", "reason", "public_route"])
+        writer = csv.DictWriter(
+            stream,
+            fieldnames=["column", "source", "reason", "public_route"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(exclusions)
 
@@ -135,7 +139,11 @@ def build_data(out: Path) -> None:
     for column in ODBL_COLUMNS:
         dictionary_rows.append({"column": column, "dtype": str(odbl[column].dtype), "licence_group": "ODbL-1.0 derivative", "notes": "Derived from the World Bank 2016 OpenStreetMap transmission-line snapshot; © OpenStreetMap contributors."})
     with (out / "data/data_dictionary.csv").open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=["column", "dtype", "licence_group", "notes"])
+        writer = csv.DictWriter(
+            stream,
+            fieldnames=["column", "dtype", "licence_group", "notes"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(dictionary_rows)
 
@@ -190,7 +198,7 @@ raw/
 message: \"If you use this repository, cite the software/data release and the associated paper.\"
 title: \"Global FPV evidence-bounded resource assessment\"
 type: software
-version: 1.0.0-v118
+version: 1.0.1-v118
 date-released: 2026-07-15
 repository-code: \"{repository}\"
 license: MIT
@@ -222,7 +230,7 @@ authors:
         "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
         "@type": "SoftwareSourceCode",
         "name": "Global FPV evidence-bounded resource assessment",
-        "version": "1.0.0-v118",
+        "version": "1.0.1-v118",
         "codeRepository": repository,
         "license": "https://spdx.org/licenses/MIT",
         "datePublished": "2026-07-15",
@@ -327,7 +335,7 @@ The repository includes the v109–v117 pipeline scripts because the final inven
 """)
     write(out / "pyproject.toml", """[project]
 name = "global-fpv-evidence-bounds"
-version = "1.0.0"
+version = "1.0.1"
 description = "Evidence-bounded global floating photovoltaic resource assessment"
 requires-python = ">=3.10"
 dependencies = [

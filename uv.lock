@@ -348,7 +348,7 @@ wheels = [
 
 [[package]]
 name = "global-fpv-evidence-bounds"
-version = "1.0.0"
+version = "1.0.1"
 source = { virtual = "." }
 dependencies = [
     { name = "geopandas" },

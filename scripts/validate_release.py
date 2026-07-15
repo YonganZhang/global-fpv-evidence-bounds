@@ -20,7 +20,14 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
-    repo = Path(__file__).resolve().parents[1]
+    # The builder copies this gate from ``src/release/`` to ``scripts/`` in
+    # the public repository.  Resolve the repository root correctly from
+    # either location so both the canonical source and exported copy are
+    # independently runnable.
+    source = Path(__file__).resolve()
+    repo = source.parents[1]
+    if not (repo / "data").is_dir():
+        repo = source.parents[2]
     checks: dict[str, bool] = {}
     details: dict[str, object] = {}
 
