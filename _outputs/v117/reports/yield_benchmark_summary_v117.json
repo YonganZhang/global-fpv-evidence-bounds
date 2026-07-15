@@ -1,0 +1,10 @@
+{
+  "comparison": "v117 monthly NASA POWER screen versus Woolway et al. published per-kW model output",
+  "interpretation": "cross-model and climate-period benchmark, not operating-plant validation",
+  "n": 134703,
+  "pearson_r": 0.8963982182656088,
+  "bias_kwh_kwp": -143.785782776398,
+  "mae_kwh_kwp": 158.60307631111527,
+  "rmse_kwh_kwp": 182.043214419778,
+  "median_relative_difference_pct": -11.891031603161228
+}

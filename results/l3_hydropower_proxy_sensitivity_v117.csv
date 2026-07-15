@@ -1,0 +1,9 @@
+conservation_definition,dryup_evidence_policy,infrastructure_mapping_policy,with_hydropower_proxy_twh,mapped_lines_only_twh,hydropower_proxy_increment_twh
+core,known_only,lower_mapping,1594.5943379021421,1486.9884352090526,107.60590269308962
+core,known_only,upper_mapping,3115.536069832433,2811.7734365581578,303.76263327427523
+core,unknown_pass,lower_mapping,1786.4134632975818,1678.8075606044924,107.60590269308962
+core,unknown_pass,upper_mapping,3508.2823401709124,3204.5197068966377,303.76263327427523
+conservative,known_only,lower_mapping,1100.5209820384507,1007.9163646198947,92.60461741855622
+conservative,known_only,upper_mapping,2172.6035065969386,1953.184626761702,219.4188798352365
+conservative,unknown_pass,lower_mapping,1250.2794599431425,1157.6748425245862,92.60461741855622
+conservative,unknown_pass,upper_mapping,2493.593205004449,2274.174325169213,219.4188798352365

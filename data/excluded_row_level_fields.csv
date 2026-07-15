@@ -1,0 +1,23 @@
+column,source,reason,public_route
+in_wdpa_polygon_any,Protected Planet WDPA,redistribution and sublicensing are prohibited without permission,recompute locally from provider-authorized input
+in_wdpa_polygon_strict_i_iv,Protected Planet WDPA,redistribution and sublicensing are prohibited without permission,recompute locally from provider-authorized input
+population_center_distance_km,LandScan Global 2024,row-level redistribution permission was not established,recompute locally from provider-authorized input
+within_10km_population_center,LandScan Global 2024,row-level redistribution permission was not established,recompute locally from provider-authorized input
+published_known_gates_10km_pass,Woolway/WDPA/LandScan compound derivative,contains restricted gate results,recompute locally from provider-authorized input
+published_known_gates_10km_generation_gwh,Woolway/WDPA/LandScan compound derivative,contains restricted gate results,recompute locally from provider-authorized input
+l2_core_no_dry_pass_v112,WDPA/LandScan compound derivative,downloadable row-level derivative is not redistributed,recompute locally from provider-authorized input
+l2_conservative_no_dry_pass_v112,WDPA/LandScan compound derivative,downloadable row-level derivative is not redistributed,recompute locally from provider-authorized input
+l2_core_type_generation_gwh_v112,WDPA/LandScan compound derivative,downloadable row-level derivative is not redistributed,recompute locally from provider-authorized input
+l2_conservative_type_generation_gwh_v112,WDPA/LandScan compound derivative,downloadable row-level derivative is not redistributed,recompute locally from provider-authorized input
+l2_author_visible_type_generation_gwh_v112,WDPA/LandScan compound derivative,downloadable row-level derivative is not redistributed,recompute locally from provider-authorized input
+l2_author_visible_pass_v112,WDPA/LandScan compound derivative,downloadable row-level derivative is not redistributed,recompute locally from provider-authorized input
+in_woolway_public_table,Woolway et al. public table,kept out of the blanket data licence pending item-level licence confirmation,download from the article data source and rebuild
+woolway_ice_cover_fraction,Woolway et al. public table,kept out of the blanket data licence pending item-level licence confirmation,download from the article data source and rebuild
+woolway_population_distance_km,Woolway et al. public table,kept out of the blanket data licence pending item-level licence confirmation,download from the article data source and rebuild
+woolway_protected_area,Woolway et al. public table,kept out of the blanket data licence pending item-level licence confirmation,download from the article data source and rebuild
+woolway_table_match_v112,Woolway et al. public table,kept out of the blanket data licence pending item-level licence confirmation,download from the article data source and rebuild
+woolway_total_fpv_output_gwh,Woolway et al. public table,kept out of the blanket data licence pending item-level licence confirmation,download from the article data source and rebuild
+grand_hydropower_evidence,GRanD v1.1,raw identifier/attribute redistribution licence was not verified for the local version,download GRanD from Global Dam Watch/USGS and rebuild
+grand_id,GRanD v1.1,raw identifier/attribute redistribution licence was not verified for the local version,download GRanD from Global Dam Watch/USGS and rebuild
+grid_within_25km_observed_or_hydropower_v115,GRanD v1.1,raw identifier/attribute redistribution licence was not verified for the local version,download GRanD from Global Dam Watch/USGS and rebuild
+grid_within_25km_possible_or_hydropower_v115,GRanD v1.1,raw identifier/attribute redistribution licence was not verified for the local version,download GRanD from Global Dam Watch/USGS and rebuild

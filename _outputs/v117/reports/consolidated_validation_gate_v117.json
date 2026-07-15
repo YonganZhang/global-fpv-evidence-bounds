@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "checks": {
+    "reference_rows_199976": true,
+    "unique_wb_id": true,
+    "reference_additions_1245": true,
+    "country_complete": true,
+    "continent_complete": true,
+    "standard_continent_complete": true,
+    "l1_not_above_l0": true,
+    "core_l2_monotonic": true,
+    "conservative_l2_monotonic": true,
+    "core_l3_monotonic": true,
+    "complete_l2_is_na": true,
+    "complete_l3_is_na": true,
+    "glev_expected_months": true
+  },
+  "passed": 13,
+  "total": 13,
+  "complete_l2": false,
+  "complete_l3": false,
+  "inventory_identity_sensitivity": {
+    "spatial_only_matches": 645,
+    "calibrated_spatial_match_precision_pct": 98.5625,
+    "reference_policy": "excluded as high-confidence duplicates",
+    "authoritative_only_dedup_sensitivity_rows": 200621,
+    "authoritative_only_dedup_added_l0_twh": 14.865219116210938,
+    "authoritative_only_dedup_added_l1_twh": 14.673332214355469,
+    "raw_hydrolakes_scope_rows": 179787,
+    "v116_reference_rows": 198731,
+    "removed_from_raw_direct_branch": 1998,
+    "authoritative_duplicate_removals": 108,
+    "spatial_high_confidence_reference_removals": 645,
+    "unsupported_deletions_restored": 1245,
+    "restored_area_km2": 13295.229999999996,
+    "v117_reference_rows": 199976
+  },
+  "yield_benchmark": {
+    "comparison": "v117 monthly NASA POWER screen versus Woolway et al. published per-kW model output",
+    "interpretation": "cross-model and climate-period benchmark, not operating-plant validation",
+    "n": 134703,
+    "pearson_r": 0.8963982182656088,
+    "bias_kwh_kwp": -143.785782776398,
+    "mae_kwh_kwp": 158.60307631111527,
+    "rmse_kwh_kwp": 182.043214419778,
+    "median_relative_difference_pct": -11.891031603161228
+  },
+  "cost_basis": {
+    "utility_pv_floor_capex_usd_kw": 691,
+    "source": "IRENA global weighted-average utility-scale solar PV installed cost for 2024",
+    "fpv_reference_capex_usd_kw": 900,
+    "fpv_high_cost_capex_usd_kw": 1200,
+    "interpretation": "parametric sensitivity only; not a project quote or bankability assessment"
+  }
+}

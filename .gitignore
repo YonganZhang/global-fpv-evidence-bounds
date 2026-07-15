@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+_outputs/v117/data/fpv_reference_inventory_v117.parquet
+raw/

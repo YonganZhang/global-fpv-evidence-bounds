@@ -1,0 +1,86 @@
+[
+  {
+    "dataset": "HydroLAKES",
+    "url": "https://www.hydrosheds.org/products/hydrolakes",
+    "licence": "CC-BY-4.0",
+    "redistribution": "allowed with attribution"
+  },
+  {
+    "dataset": "GeoDAR v1.1",
+    "url": "https://zenodo.org/records/6163413",
+    "licence": "CC-BY-4.0",
+    "redistribution": "allowed with attribution"
+  },
+  {
+    "dataset": "GRanD",
+    "url": "https://www.globaldamwatch.org/grand/",
+    "licence": "verify the downloaded version",
+    "redistribution": "not bundled"
+  },
+  {
+    "dataset": "NASA POWER Release 10",
+    "url": "https://power.larc.nasa.gov/",
+    "licence": "NASA open-data terms",
+    "redistribution": "derived values bundled"
+  },
+  {
+    "dataset": "LI-CCR",
+    "url": "https://zenodo.org/records/17687699",
+    "licence": "CC-BY-4.0",
+    "redistribution": "derived values bundled"
+  },
+  {
+    "dataset": "Woolway et al. public lake table",
+    "url": "https://doi.org/10.1038/s44221-024-00251-4",
+    "licence": "verify item-level source-data terms",
+    "redistribution": "source columns not bundled"
+  },
+  {
+    "dataset": "Protected Planet WDPA",
+    "url": "https://www.protectedplanet.net/en/legal",
+    "licence": "Protected Planet terms",
+    "redistribution": "prohibited without permission; not bundled"
+  },
+  {
+    "dataset": "Ramsar Sites Information Service",
+    "url": "https://rsis.ramsar.org/",
+    "licence": "CC-BY-4.0",
+    "redistribution": "derived flags bundled"
+  },
+  {
+    "dataset": "LandScan Global 2024",
+    "url": "https://landscan.ornl.gov/",
+    "licence": "provider terms",
+    "redistribution": "row-level derivatives not bundled pending permission"
+  },
+  {
+    "dataset": "GLEV",
+    "url": "https://zenodo.org/records/4646621",
+    "licence": "CC-BY-4.0",
+    "redistribution": "derived values bundled"
+  },
+  {
+    "dataset": "GRIP4",
+    "url": "https://www.globio.info/download-grip-dataset",
+    "licence": "CC0",
+    "redistribution": "derived distances bundled"
+  },
+  {
+    "dataset": "OpenStreetMap transmission lines via World Bank",
+    "url": "https://energydata.info/dataset/global-transmission-network",
+    "licence": "ODbL-1.0",
+    "redistribution": "separate ODbL derivative"
+  },
+  {
+    "dataset": "GLOBathy basic parameters",
+    "url": "https://doi.org/10.6084/m9.figshare.13402070.v1",
+    "licence": "CC0",
+    "redistribution": "derived values bundled"
+  },
+  {
+    "dataset": "Natural Earth admin-0",
+    "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "licence": "public domain",
+    "redistribution": "country assignments bundled"
+  }
+]

@@ -1,0 +1,4 @@
+wind_case,legacy_scope_l0_twh,difference_vs_reference_pct
+POWER_wind_reference,16587.581229551328,0.0
+wind_scaled_to_GEE_mean,16471.761528500654,-0.6982314024442382
+zero_wind_stress_test,16356.607528179597,-1.392449557143649

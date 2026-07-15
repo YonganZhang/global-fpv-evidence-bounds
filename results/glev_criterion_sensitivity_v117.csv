@@ -1,0 +1,13 @@
+conservation_definition,dryup_criterion,evidence_policy,eligible_waterbodies,generation_twh,unquantified_temporal_gap
+core,any_exact_zero_month,known_only_lower,22405,4190.139560430422,2019-2020 for all records
+core,any_exact_zero_month,unknown_pass_upper,28470,4804.616068316397,2019-2020 for all records
+core,at_least_two_exact_zero_months,known_only_lower,23269,4231.716694086079,2019-2020 for all records
+core,at_least_two_exact_zero_months,unknown_pass_upper,29334,4846.193201972053,2019-2020 for all records
+core,minimum_area_at_most_1pct_of_median,known_only_lower,21388,4017.1573824753145,2019-2020 for all records
+core,minimum_area_at_most_1pct_of_median,unknown_pass_upper,27453,4631.63389036129,2019-2020 for all records
+conservative,any_exact_zero_month,known_only_lower,18221,2914.319715492447,2019-2020 for all records
+conservative,any_exact_zero_month,unknown_pass_upper,23730,3404.4404405247924,2019-2020 for all records
+conservative,at_least_two_exact_zero_months,known_only_lower,18993,2950.036785917103,2019-2020 for all records
+conservative,at_least_two_exact_zero_months,unknown_pass_upper,24502,3440.157510949448,2019-2020 for all records
+conservative,minimum_area_at_most_1pct_of_median,known_only_lower,17343,2788.0371952236833,2019-2020 for all records
+conservative,minimum_area_at_most_1pct_of_median,unknown_pass_upper,22852,3278.157920256028,2019-2020 for all records

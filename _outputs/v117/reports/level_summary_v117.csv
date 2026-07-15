@@ -1,0 +1,13 @@
+tier,scientific_tier_complete,eligible_waterbodies,generation_twh,retention_vs_reference_l0_pct
+L0-reference,True,199976,16712.988951423074,100.0
+L1-reference,True,79669,10994.671646587763,65.78519065945765
+L2-core-public-evidence-lower,False,22405,4190.139560430422,25.071156168470036
+L2-core-public-evidence-upper,False,28470,4804.616068316397,28.74779659270519
+L2-conservative-public-evidence-lower,False,18221,2914.319715492447,17.437453731125093
+L2-conservative-public-evidence-upper,False,23730,3404.4404405247924,20.370027470370054
+L3-core-partial-access-lower,False,11084,1594.5943379021421,9.54104823821095
+L3-core-partial-access-upper,False,20393,3508.2823401709124,20.991351997945227
+L3-conservative-partial-access-lower,False,8549,1100.5209820384507,6.584824445448723
+L3-conservative-partial-access-upper,False,16489,2493.593205004449,14.920091267050859
+L2-complete-published-1991-2020-criterion,False,,,
+L3-complete-deployable,False,,,

@@ -1,0 +1,9 @@
+conservation_definition,dryup_evidence_policy,infrastructure_mapping_policy,eligible_waterbodies,generation_twh
+core,known_only,lower_mapping,11084,1594.5943379021421
+core,known_only,upper_mapping,16243,3115.536069832433
+core,unknown_pass,lower_mapping,13757,1786.4134632975818
+core,unknown_pass,upper_mapping,20393,3508.2823401709124
+conservative,known_only,lower_mapping,8549,1100.5209820384507
+conservative,known_only,upper_mapping,12849,2172.6035065969386
+conservative,unknown_pass,lower_mapping,10832,1250.2794599431425
+conservative,unknown_pass,upper_mapping,16489,2493.593205004449

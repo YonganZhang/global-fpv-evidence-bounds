@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "passed": 10,
+  "total": 10,
+  "checks": {
+    "inventory_rows_199976": true,
+    "wb_id_unique": true,
+    "country_complete": true,
+    "iso3_complete": true,
+    "continent_complete": true,
+    "identity_actions_match_audit": true,
+    "level_values_match_trace": true,
+    "level_chain_monotonic": true,
+    "complete_l2_and_l3_are_na": true,
+    "consolidated_gate_passes": true
+  }
+}

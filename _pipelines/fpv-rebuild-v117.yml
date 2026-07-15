@@ -1,0 +1,77 @@
+schema_version: research-pipeline/v1
+id: fpv-rebuild-v117
+status: active
+owner: src/rebuild
+run_dir: _outputs/v117
+purpose: >-
+  Repair the proximity-only inventory merge, rebuild the evidence-bounded FPV
+  hierarchy, and produce the controlled Applied Energy manuscript package
+  without promoting incomplete suitability or deployability tiers.
+
+steps:
+  - id: evidence-tier-scientific-rebuild
+    ref: code:fpv_rebuild_v117_scientific
+    action: >-
+      uv run --with geopandas --with pyarrow --with pandas --with scipy
+      --with pyshp --with xlrd python
+      src/rebuild/rebuild_v117_scientific_revision.py
+    assertions:
+      - signal: _outputs/v117/reports/consolidated_validation_gate_v117.json
+        predicate: status == pass; 13/13 checks; 199976 unique rows; complete L2/L3 false
+      - signal: _outputs/v117/reports/inventory_adjudication.csv
+        predicate: 108 authoritative removals; 645 calibrated spatial removals; 1245 unsupported deletions restored
+
+  - id: independent-scientific-gate
+    ref: code:fpv_rebuild_v117_validation
+    action: >-
+      uv run --with pyarrow --with pandas python
+      src/rebuild/validate_v117_scientific.py
+    assertions:
+      - signal: _outputs/v117/reports/independent_validation_gate_v117.json
+        predicate: status == pass; 10/10 independent integrity checks
+
+  - id: manuscript-trace-products
+    ref: code:fpv_rebuild_v117_products
+    action: >-
+      uv run --with geopandas --with pyarrow --with pandas --with scipy
+      --with pyshp --with xlrd python
+      src/rebuild/build_v117_manuscript_products.py
+    assertions:
+      - signal: _outputs/v117/reports/level_summary_v117.csv
+        predicate: exact L0/L1 and bounded L2/partial-L3 values; complete L2/L3 rows are NA
+
+  - id: publication-figures
+    ref: code:fpv_figures_v117_builder
+    action: >-
+      uv run --with geopandas --with pyarrow --with pandas --with matplotlib
+      --with numpy python src/figures/draw_v117_manuscript_figures.py
+    assertions:
+      - signal: paper/figures/v2026-07-15_v117_rebuild/main/graphical_abstract.png
+        predicate: 3000 x 1200 pixels; Fig1-Fig5 and FigS1-FigS2 PNG/PDF pairs exist
+
+  - id: manuscript-compile-and-acceptance
+    ref: code:fpv_paper_v117_validation
+    action: >-
+      cd paper/draft && latexmk -g -pdf -interaction=nonstopmode
+      -halt-on-error main_submission.tex && latexmk -g -pdf
+      -interaction=nonstopmode -halt-on-error main.tex && cd ../.. &&
+      python3 src/rebuild/validate_v117_manuscript.py
+    assertions:
+      - signal: paper/draft/review_versions/2026-07-15_v117_scientific_revision/reports/manuscript_acceptance_gate.json
+        predicate: status == pass; 27/27 manuscript and submission checks
+
+anti_fake_completion:
+  - Proximity alone is not duplicate evidence; the retired legacy merge must fail loudly.
+  - Complete published-criterion L2 and complete deployable L3 remain NA.
+  - GLEV 1991-2018 is not relabelled as an author-reproduced 1991-2020 test.
+  - Mapped power-line proximity is not interconnection capacity.
+  - GLOBathy maximum water-body depth is not site or anchor depth.
+  - Parametric LCOE is not a project quote, return or bankability result.
+  - Frozen v116 sources may contain old values for audit but active manuscript sources may not.
+
+known_external_gaps:
+  - Author-controlled funding identifiers and repository DOI/accession.
+  - Final author order, Yujie Jiang metadata, CRediT and all-author approval.
+  - Operating-plant validation and site-specific engineering, permitting and grid-capacity evidence.
+verified_steps_hash: 0ad021293c7511b2b8bc9c77e1494fbdeeeb84b0d280348fdd39dd5ae11be4e1
+verified_at_commit: 0507f392425f0a5828bfb029ac539ddc47bcc75a

@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "passed": 12,
+  "total": 12,
+  "checks": {
+    "required_release_files": true,
+    "open_table_199976_unique": true,
+    "odbl_table_199976_unique": true,
+    "restricted_or_sharealike_columns_separated": true,
+    "odbl_table_minimal": true,
+    "exact_v117_endpoints": true,
+    "complete_l2_l3_are_na": true,
+    "six_author_order": true,
+    "no_machine_specific_source_paths": true,
+    "no_embedded_credentials": true,
+    "source_licence_manifest": true,
+    "release_checksums": true
+  },
+  "details": {
+    "missing_files": [],
+    "forbidden_open_table_columns": [],
+    "author_positions": {
+      "Yongan Zhang": 223,
+      "Yujie Jiang": 304,
+      "Xiaoyuan Li": 348,
+      "Zhiling Guo": 392,
+      "Yuntian Chen": 484,
+      "Jinyue Yan": 577
+    },
+    "checksum_failures": []
+  }
+}

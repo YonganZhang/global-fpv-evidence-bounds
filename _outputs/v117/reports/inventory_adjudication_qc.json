@@ -1,0 +1,16 @@
+{
+  "spatial_only_matches": 645,
+  "calibrated_spatial_match_precision_pct": 98.5625,
+  "reference_policy": "excluded as high-confidence duplicates",
+  "authoritative_only_dedup_sensitivity_rows": 200621,
+  "authoritative_only_dedup_added_l0_twh": 14.865219116210938,
+  "authoritative_only_dedup_added_l1_twh": 14.673332214355469,
+  "raw_hydrolakes_scope_rows": 179787,
+  "v116_reference_rows": 198731,
+  "removed_from_raw_direct_branch": 1998,
+  "authoritative_duplicate_removals": 108,
+  "spatial_high_confidence_reference_removals": 645,
+  "unsupported_deletions_restored": 1245,
+  "restored_area_km2": 13295.229999999996,
+  "v117_reference_rows": 199976
+}

@@ -1,0 +1,61 @@
+\section{Methods}
+
+\subsection{Assessment design}
+
+We organized the analysis as sequential evidence states (Fig.~\ref{fig:framework}). L0 is a physical resource under a declared coverage scenario. L1 applies the ice-duration rule. L2 adds conservation, population proximity and historical surface-area evidence. Partial L3 adds road and mapped-power-line proximity. Every stage uses the same annual generation field; only the footprint or eligibility mask changes. Unknown historical evidence is excluded from lower endpoints and provisionally retained in upper endpoints. These endpoints are deterministic evidence-policy bounds, not probabilistic confidence intervals.
+
+\subsection{Water-body scope and identity adjudication}
+
+The inventory combines GeoDAR v1.1 and GRanD reservoir records with HydroLAKES v1.0~\citep{wang2022geodar,lehner2011,messager2016}. The reservoir branch contains 20{,}942 mapped reservoirs of at least 0.01~km$^2$. The lake source contains 179{,}787 HydroLAKES natural or controlled lakes of at least 1~km$^2$. All records use WGS84 centroids and a unique analysis identifier.
+
+An upstream merge had removed every lake centroid within 1~km of an external reservoir without requiring identity evidence. We re-examined the 1{,}998 omitted HydroLAKES records. Authoritative GRanD identifiers classified 108 as duplicates. A further 645 satisfied a calibrated high-confidence rule: nearest distance no greater than 1~km and source-to-target area ratio between 0.25 and 4. This rule recovered the authoritative target in 98.56\% of 1{,}600 calibration cases that met the thresholds. The remaining 1{,}245 records had no recovered duplicate evidence and were restored. The reference inventory therefore contains 20{,}942 reservoirs and 179{,}034 natural or controlled lakes, totalling 199{,}976 water bodies. An authoritative-only deduplication sensitivity retains the 645 spatial matches.
+
+Country and continent fields use HydroLAKES attributes for lakes, mapped HydroLAKES attributes for linked reservoirs, and Natural Earth 1:10m Admin-0 centroid assignment for remaining reservoirs~\citep{naturalearth2025}. Country-to-continent crosswalks were reapplied after spatial assignment so that island states did not retain open-ocean region labels.
+
+\subsection{Solar resource and electricity conversion}
+
+We derived 12 monthly means for 2019--2023 from NASA POWER Release~10 global horizontal irradiance, direct normal irradiance, 2-m air temperature, 10-m wind speed and surface pressure~\citep{nasaPower2026}. Each centroid was assigned to the nearest native solar or meteorological grid cell. Monthly irradiation was decomposed with the Erbs correlation~\citep{erbs1982}; plane-of-array irradiation used the Liu--Jordan isotropic model~\citep{liu1963} with water albedo 0.06 and tilt equal to the smaller of absolute latitude and 20$^\circ$. Module temperature followed the Faiman model~\citep{faiman2008}:
+
+\begin{equation}
+T_{\mathrm{cell}}=T_{\mathrm{air}}+\frac{I_{\mathrm{POA}}}{U_0+U_1u},
+\end{equation}
+
+where $U_0=25.0$~W~m$^{-2}$~K$^{-1}$, $U_1=6.84$~W~s~m$^{-3}$~K$^{-1}$ and $u$ is 10-m wind speed. Monthly specific yield used performance ratio 0.80 and power-temperature coefficient $-0.0037$~K$^{-1}$, with the temperature multiplier bounded to 0.75--1.15. A packing density of 0.10~kWp~m$^{-2}$ converted specific yield to footprint energy.
+
+The L0 reference footprint for water body $i$ is
+
+\begin{equation}
+A_{i,\mathrm{FPV}}=\min(c_t A_i,30~\mathrm{km}^2),
+\end{equation}
+
+where $c_t=0.30$ for reservoirs and 0.10 for natural or controlled lakes. These fractions define a comparison scenario, not a site-design recommendation. We also evaluated uniform 5\%, 10\%, 20\% and 30\% coverage and two additional type-specific combinations. The observed global diversity of installed coverage provides context for this sensitivity~\citep{nobre2024}.
+
+We benchmarked annual specific yield against the public per-kW output of Woolway et al.~\citep{woolway2024} for matched lakes. This is a cross-model and climate-period comparison, not operating-plant validation. Because 10-m POWER wind was higher than a previously sampled Google Earth Engine mean, we also recomputed the legacy common scope after scaling wind to that mean and after setting wind to zero.
+
+\subsection{Ice eligibility}
+
+L1 passes a water body when its best available ice duration does not exceed half a year. We first used LI-CCR MODIS phenology where a lake had at least five valid years during 2002--2020~\citep{jiang2026liccr}. We next used the 1991--2020 ice-cover fraction published with the global lake FPV assessment, with a threshold of 0.5~\citep{woolway2024}. Remaining records used a labelled POWER-temperature proxy and passed when no more than six monthly mean temperatures were below 0$^\circ$C. Sensitivities replace the hierarchy with Woolway-plus-proxy or with the temperature proxy for all records.
+
+\subsection{Conservation, population and surface-area evidence}
+
+We intersected complete water-body polygons with the June 2026 World Database on Protected Areas. The core definition excludes IUCN categories Ia, Ib, II, III and IV. The conservative definition excludes every mapped WDPA polygon and every published Ramsar polygon~\citep{unep2023wdpa,ramsar2026}. Point-only protected areas and Ramsar records without a published boundary were not buffered.
+
+Population centres were derived from the 30-arcsecond LandScan 2024 ambient-population raster~\citep{lebakula2025landscan}. A retained centre is an eight-neighbour connected region with at least 1{,}000 people and density at least 400 people~km$^{-2}$. Spherical distance was measured from densified water-body boundaries and interior representative points. The implemented 10.95~km threshold contains the nominal 10~km rule plus the maximum half-cell and boundary-sampling allowance.
+
+Historical surface-area evidence came from the public monthly series underlying GLEV~\citep{zhao2022glev}. We analysed the 336 months from January 1991 through December 2018. A record was complete only when all 336 values were finite, and the reference dry-up criterion flagged at least one exact zero-area month. Core and conservative L2 lower endpoints require complete evidence and no observed dry-up. Their upper endpoints apply the same conservation and population rules, exclude observed failures, and provisionally retain unknown records. We separately tested criteria requiring two zero months and a minimum area no greater than 1\% of the record median. The public series does not quantify the universal 2019--2020 gap, so complete L2 under the published 1991--2020 criterion remains unavailable.
+
+\subsection{Partial infrastructure proximity}
+
+Road screening uses the 5-arcminute GRIP road-density raster~\citep{meijer2018grip}. For each centroid, we found the nearest positive-density cell and bracketed its centre-to-centre distance by the cell half-diagonal. The lower mapping policy requires the conservative upper distance bound to be no greater than 10~km. The upper mapping policy uses the lower distance bound. These are centroid-to-cell bounds and do not locate a shoreline route.
+
+Power-line screening uses the World Bank distribution of the 2016 OpenStreetMap power-line snapshot~\citep{worldbankTransmission2023}. Lines were sampled at no more than 5~km spacing. The lower mapping policy requires sampled-line distance no greater than 25~km; the upper policy subtracts the 2.5~km sampling half-gap before applying the threshold. GRanD hydropower use was included in the reference screen as supplementary infrastructure evidence and removed in a separate sensitivity. The layer contains no voltage, substation or residual-capacity fields. Partial L3 therefore measures proximity to mapped infrastructure, not grid readiness.
+
+\subsection{Engineering and economic sensitivities}
+
+GLOBathy \texttt{Dmax\_use} provides a modelled maximum water-body depth for matched HydroLAKES identities~\citep{khazaei2022globathy}. We report coverage and test maximum-depth limits of 20, 50 and 100~m. These limits are sensitivities because maximum water-body depth is not depth at a candidate array or anchor.
+
+Parametric LCOE uses a 25-year lifetime, 0.5\% annual degradation and three assumption sets. A utility-PV floor uses 691~USD~kW$^{-1}$ CAPEX, 1.5\% annual O\&M and 6\% discount rate, where the CAPEX is the IRENA 2024 global weighted mean for utility-scale PV~\citep{irena2025costs}. FPV reference and high-cost cases use 900 and 1{,}200~USD~kW$^{-1}$ CAPEX, 2.0\% and 2.5\% O\&M, and 8\% and 10\% discount rates, respectively, consistent with treating the FPV premium as uncertain~\citep{niccolai2024}. The calculation omits project-specific interconnection, anchoring, permitting, taxes and financing; it is neither a project quote nor a bankability test.
+
+\subsection{Reproducibility and validation}
+
+Versioned Python workflows assert source scope, unique identifiers, evidence-state completeness and tier monotonicity. The v117 gate requires 199{,}976 unique records, 1{,}245 restored unsupported deletions, complete country and six-continent attribution, 336 valid GLEV months for every known record, monotonic L0--L3 endpoints, and explicit NA states for complete L2 and L3. Figure and manuscript tables are generated only after all 13 checks pass. Exact trace values are retained in the Supplementary Information; main-text energy values are rounded to the nearest TWh.

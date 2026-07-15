@@ -1,0 +1,281 @@
+% Supplementary Information -- controlled v117 scientific revision
+
+\section*{Supplementary Information}
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+\subsection*{Supplementary interpretation rules}
+
+The reference inventory is an assessment scope, not an enumeration of every inland water body worldwide. ``Lower'' and ``upper'' denote deterministic evidence policies. They do not denote confidence limits. Complete L2 under the published 1991--2020 criterion and complete deployable L3 remain unavailable. Exact values below are generated from the validated water-body table; main-text energy values are rounded to the nearest TWh.
+
+\subsection*{Supplementary Tables}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Datasets and interpretation boundaries.}}
+\label{tab:S1}
+\scriptsize
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{2.1cm}>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{2.7cm}>{\RaggedRight\arraybackslash}X}
+\toprule
+Dataset & Version or period & Role & Interpretation boundary \\
+\midrule
+GeoDAR and GRanD & v1.1 and v1.3 & Reservoir inventory, identity and hydropower use & Lake-specific products require a HydroLAKES link \\
+HydroLAKES & v1.0 & Natural/controlled lakes and shared identities & Study lake threshold is 1~km$^2$ \\
+NASA POWER & Release 10, 2019--2023 & Monthly resource and temperature model & Screening climatology, not hourly plant validation \\
+LI-CCR & 2002--2020 valid-year subset & First-priority ice duration & Different period and observation type from other sources \\
+Woolway lake data & 1991--2020 & Ice fraction and yield benchmark & Matched lakes only; benchmark is cross-model \\
+WDPA and Ramsar & June 2026 retrieval & Conservation polygons & Unmapped/point-only boundaries are not inferred \\
+LandScan & 2024 & Population-centre derivation & Ambient population and raster approximation \\
+GLEV & 1991--2018 public months & Historical surface-area evidence & Does not reproduce a 1991--2020 criterion \\
+GRIP & 5-arcminute raster & Road-distance bracket & Positive cells do not locate shoreline roads \\
+OSM power lines & 2016 snapshot & Mapped-line-distance bracket & No voltage, substation or spare-capacity fields \\
+GLOBathy & Basic parameters & Modelled maximum depth & Not array-site or anchor depth \\
+Natural Earth & Admin-0 v5.1.1 & Remaining country/continent attribution & Centroid assignment is a reporting crosswalk \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Inventory identity adjudication.}}
+\label{tab:S2}
+\begin{tabular}{lr}
+\toprule
+Quantity & Value \\
+\midrule
+Mapped external reservoirs ($\geq0.01$~km$^2$) & 20{,}942 \\
+Raw HydroLAKES natural/controlled scope ($\geq1$~km$^2$) & 179{,}787 \\
+Records absent after the original proximity screen & 1{,}998 \\
+Authoritative duplicate matches & 108 \\
+Calibrated high-confidence spatial matches & 645 \\
+Spatial-rule target agreement in calibration & 98.56\% \\
+Unsupported deletions restored & 1{,}245 \\
+Reference inventory & 199{,}976 \\
+Authoritative-only deduplication sensitivity & 200{,}621 \\
+Added L0 in authoritative-only sensitivity (TWh~yr$^{-1}$) & 14.865 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Reference generation and footprint parameters.}}
+\label{tab:S3}
+\begin{tabular}{lll}
+\toprule
+Parameter & Value & Role \\
+\midrule
+Reservoir coverage & 30\% & Reference scenario \\
+Lake coverage & 10\% & Reference scenario \\
+Footprint cap & 30~km$^2$ & Both water-body types \\
+Packing density & 0.10~kWp~m$^{-2}$ & Footprint-to-capacity conversion \\
+Performance ratio & 0.80 & Monthly yield model \\
+Temperature coefficient & $-0.0037$~K$^{-1}$ & Module response \\
+Water albedo & 0.06 & Plane-of-array model \\
+Maximum tilt & 20$^\circ$ & Latitude rule \\
+Faiman $U_0$, $U_1$ & 25.0, 6.84 & Thermal model parameters \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Validated level totals and unavailable states.}}
+\label{tab:S4}
+\scriptsize
+\begin{tabular}{lrrrl}
+\toprule
+State & Water bodies & TWh~yr$^{-1}$ & L0 retention (\%) & Scientific state \\
+\midrule
+L0 reference & 199{,}976 & 16{,}712.989 & 100.00 & Complete for scenario \\
+L1 reference & 79{,}669 & 10{,}994.672 & 65.79 & Complete for stated ice rule \\
+Core L2 lower & 22{,}405 & 4{,}190.140 & 25.07 & Public-evidence endpoint \\
+Core L2 upper & 28{,}470 & 4{,}804.616 & 28.75 & Public-evidence endpoint \\
+Conservative L2 lower & 18{,}221 & 2{,}914.320 & 17.44 & Public-evidence endpoint \\
+Conservative L2 upper & 23{,}730 & 3{,}404.440 & 20.37 & Public-evidence endpoint \\
+Core partial L3 lower & 11{,}084 & 1{,}594.594 & 9.54 & Partial proximity endpoint \\
+Core partial L3 upper & 20{,}393 & 3{,}508.282 & 20.99 & Partial proximity endpoint \\
+Conservative partial L3 lower & 8{,}549 & 1{,}100.521 & 6.58 & Partial proximity endpoint \\
+Conservative partial L3 upper & 16{,}489 & 2{,}493.593 & 14.92 & Partial proximity endpoint \\
+Complete published-criterion L2 & -- & -- & -- & Unavailable \\
+Complete deployable L3 & -- & -- & -- & Unavailable \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Water-body-type composition of the assessment states.}}
+\label{tab:S5}
+\scriptsize
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}Xrrr>{\RaggedRight\arraybackslash}X}
+\toprule
+State & Lake count & Lake TWh~yr$^{-1}$ & Reservoir count & Reservoir TWh~yr$^{-1}$ \\
+\midrule
+L0 & 179{,}034 & 11{,}378.417 & 20{,}942 & 5{,}334.571 \\
+L1 & 58{,}877 & 5{,}800.175 & 20{,}792 & 5{,}194.497 \\
+Core L2 lower & 14{,}882 & 1{,}596.134 & 7{,}523 & 2{,}594.005 \\
+Core L2 upper & 14{,}882 & 1{,}596.134 & 13{,}588 & 3{,}208.482 \\
+Conservative L2 lower & 11{,}974 & 1{,}089.253 & 6{,}247 & 1{,}825.067 \\
+Conservative L2 upper & 11{,}974 & 1{,}089.253 & 11{,}756 & 2{,}315.187 \\
+Core partial L3 lower & 7{,}038 & 478.927 & 4{,}046 & 1{,}115.668 \\
+Core partial L3 upper & 10{,}114 & 863.033 & 10{,}279 & 2{,}645.250 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Coverage and ice-policy sensitivities.}}
+\label{tab:S6}
+\scriptsize
+\begin{tabular}{lrrr}
+\toprule
+Scenario or policy & L0 (TWh~yr$^{-1}$) & L1 (TWh~yr$^{-1}$) & L1 retention (\%) \\
+\midrule
+Uniform 5\% coverage & 7{,}742.766 & 4{,}724.132 & 61.01 \\
+Uniform 10\% coverage & 13{,}908.882 & 8{,}239.970 & 59.24 \\
+Uniform 20\% coverage & 24{,}605.780 & 14{,}106.009 & 57.33 \\
+Uniform 30\% coverage & 34{,}189.631 & 19{,}179.352 & 56.10 \\
+Reservoir 20\%, lake 10\% & 15{,}454.535 & 9{,}757.637 & 63.14 \\
+Reservoir 30\%, lake 10\% reference & 16{,}712.989 & 10{,}994.672 & 65.79 \\
+Reservoir 30\%, lake 20\% & 25{,}864.233 & 15{,}343.043 & 59.32 \\
+\midrule
+Reference ice hierarchy & -- & 10{,}994.672 & -- \\
+Woolway then temperature proxy & -- & 10{,}848.382 & -- \\
+Temperature proxy for all & -- & 12{,}562.363 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Ice-source assignment in the reference hierarchy.}}
+\label{tab:S7}
+\begin{tabular}{lrrrr}
+\toprule
+Source & Records & Passed & Pass rate (\%) & L1 TWh~yr$^{-1}$ \\
+\midrule
+LI-CCR MODIS phenology & 31{,}344 & 9{,}354 & 29.84 & 2{,}458.213 \\
+Woolway ice fraction & 112{,}703 & 48{,}709 & 43.22 & 3{,}330.927 \\
+POWER temperature proxy & 55{,}929 & 21{,}606 & 38.63 & 5{,}205.532 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Historical surface-area evidence after conservation and population screens.}}
+\label{tab:S8}
+\begin{tabular}{llrr}
+\toprule
+Definition & Evidence state & Water bodies & TWh~yr$^{-1}$ \\
+\midrule
+Core & Known, no observed dry-up & 22{,}405 & 4{,}190.140 \\
+Core & Known, observed dry-up & 4{,}687 & 253.876 \\
+Core & Unknown public record & 6{,}065 & 614.477 \\
+Conservative & Known, no observed dry-up & 18{,}221 & 2{,}914.320 \\
+Conservative & Known, observed dry-up & 4{,}110 & 202.739 \\
+Conservative & Unknown public record & 5{,}509 & 490.121 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Core partial-L3 factorial and hydropower-proxy contribution.}}
+\label{tab:S9}
+\begin{tabular}{llrrr}
+\toprule
+Dry-up policy & Mapping policy & Water bodies & With proxy & Lines only \\
+\midrule
+Known only & Lower mapping & 11{,}084 & 1{,}594.594 & 1{,}486.988 \\
+Known only & Upper mapping & 16{,}243 & 3{,}115.536 & 2{,}811.773 \\
+Unknown pass & Lower mapping & 13{,}757 & 1{,}786.413 & 1{,}678.808 \\
+Unknown pass & Upper mapping & 20{,}393 & 3{,}508.282 & 3{,}204.520 \\
+\bottomrule
+\end{tabular}
+
+\raggedright\scriptsize Generation columns are TWh~yr$^{-1}$. ``Lines only'' removes GRanD hydropower-use evidence; neither column represents available grid capacity.
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Specific-yield and wind-sensitivity checks.}}
+\label{tab:S10}
+\begin{tabular}{lr}
+\toprule
+Metric & Value \\
+\midrule
+Matched lakes in published-yield benchmark & 134{,}703 \\
+Pearson correlation & 0.896 \\
+Mean bias (kWh~kWp$^{-1}$) & $-143.786$ \\
+Mean absolute error (kWh~kWp$^{-1}$) & 158.603 \\
+Median relative difference (\%) & $-11.891$ \\
+Wind scaled to sampled GEE mean, L0 change (\%) & $-0.698$ \\
+Zero-wind stress test, L0 change (\%) & $-1.392$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Depth coverage and parametric cost cases.}}
+\label{tab:S11}
+\scriptsize
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}Xrrr>{\RaggedRight\arraybackslash}X}
+\toprule
+Population/case & Records & Depth coverage (\%) & Median $D_{\max}$ (m) & Median LCOE (USD~MWh$^{-1}$) \\
+\midrule
+All, FPV reference & 199{,}976 & 95.92 & 13.69 & 102.64 \\
+L1, FPV reference & 79{,}669 & 89.83 & 12.61 & 85.15 \\
+Core L2 lower, FPV reference & 22{,}405 & 100.00 & 12.28 & 82.26 \\
+Core partial L3 lower, FPV reference & 11{,}084 & 100.00 & 12.53 & 87.83 \\
+\midrule
+Utility-PV floor assumptions & -- & -- & -- & 691 CAPEX; 1.5\% O\&M; 6\% discount \\
+FPV reference assumptions & -- & -- & -- & 900 CAPEX; 2.0\% O\&M; 8\% discount \\
+FPV high-cost assumptions & -- & -- & -- & 1{,}200 CAPEX; 2.5\% O\&M; 10\% discount \\
+\bottomrule
+\end{tabularx}
+
+\raggedright\scriptsize CAPEX is USD~kW$^{-1}$. Cost cases are parametric sensitivities and omit site-specific engineering, connection, permitting and financing.
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textbf{Consolidated computational acceptance gate.}}
+\label{tab:S12}
+\begin{tabularx}{0.9\textwidth}{>{\RaggedRight\arraybackslash}Xc}
+\toprule
+Check & Status \\
+\midrule
+Reference row count and unique water-body identifiers & PASS \\
+Restoration of 1{,}245 unsupported deletions & PASS \\
+Complete country, ISO3 and six-continent attribution & PASS \\
+L0--L3 endpoint monotonicity & PASS \\
+All known GLEV records contain 336 valid months & PASS \\
+Complete published-criterion L2 retained as NA & PASS \\
+Complete deployable L3 retained as NA & PASS \\
+\midrule
+Consolidated checks & 13/13 PASS \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection*{Supplementary Figures}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{FigS1.png}
+\caption{\textbf{Regional model and ice-source checks.} \textbf{a}, Published-yield benchmark by continent. \textbf{b}, Record and pass counts for each ice evidence source. \textbf{c}, Difference among the three ice policies. The yield comparison uses model output, not operating-plant observations.}
+\label{fig:S_validation}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{FigS2.png}
+\caption{\textbf{Engineering and economic sensitivities.} \textbf{a}, GLOBathy coverage and median modelled maximum depth. \textbf{b}, FPV-reference LCOE medians. \textbf{c,d}, Core partial-L3 generation retained under illustrative depth and LCOE thresholds. Maximum water-body depth is not site or anchor depth, and LCOE is not a project quote.}
+\label{fig:S_engineering}
+\end{figure}

@@ -1,0 +1,33 @@
+{
+  "title": "Global FPV evidence-bounded resource assessment: code and licence-aware processed data",
+  "upload_type": "software",
+  "description": "Reproducible code, aggregate results and licence-aware processed data for the global floating-photovoltaic evidence-bounded assessment.",
+  "creators": [
+    {
+      "name": "Zhang, Yongan"
+    },
+    {
+      "name": "Jiang, Yujie"
+    },
+    {
+      "name": "Li, Xiaoyuan"
+    },
+    {
+      "name": "Guo, Zhiling"
+    },
+    {
+      "name": "Chen, Yuntian"
+    },
+    {
+      "name": "Yan, Jinyue"
+    }
+  ],
+  "access_right": "open",
+  "license": "other-open",
+  "keywords": [
+    "floating photovoltaics",
+    "geospatial screening",
+    "renewable energy",
+    "open science"
+  ]
+}

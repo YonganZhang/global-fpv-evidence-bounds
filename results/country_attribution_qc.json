@@ -1,0 +1,15 @@
+{
+  "waterbodies": 199976,
+  "country_complete": 199976,
+  "continent_complete": 199976,
+  "standard_continent_complete": 199976,
+  "iso3_complete": 199976,
+  "source_counts": {
+    "hydrolakes_attribute": 178968,
+    "reservoir_hylak_crosswalk": 12700,
+    "natural_earth_centroid": 8242,
+    "natural_earth_name_or_centroid": 66
+  },
+  "boundary_source": "Natural Earth 1:10m Admin-0 Countries version 5.1.1",
+  "assignment_rule": "HydroLAKES country attributes; mapped HydroLAKES attributes for external reservoirs; Natural Earth centroid assignment for remaining records and ISO codes"
+}
