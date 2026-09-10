@@ -1,0 +1,9 @@
+Output renewable_support and finance_delivery, each in [0,1].
+renewable_support: general institutional support and implementation continuity for
+renewable energy applicable to FPV, not a claim of site permission or a specific law.
+finance_delivery: relative investment financing and project-delivery conditions,
+not measured capex, discount rates, physical grid access, market demand or irradiance.
+Assess the stated current snapshot, not future policies. If recent developments are
+unknown, acknowledge that. Give a separate rationale for each factor.
+Context: {{context_json}}
+Required structure: {"renewable_support": {"score": null, "confidence": "unknown", "reason": "Explain the judgment and uncertainty."}, "finance_delivery": {"score": null, "confidence": "unknown", "reason": "Explain the judgment and uncertainty."}}

@@ -1,5 +1,20 @@
 # Global FPV evidence-bounded resource assessment
 
+## September 2026: actual LLM experiment archive
+
+The versioned [v124/v125 experiment archive](releases/v1.1.0-llm-v124-v125/README.md)
+contains the actual four-task SDK prompts, 4,701 primary and 471 comparison final
+answers, the 199,976-waterbody group map, unchanged source snapshots and offline
+score/aggregate reconstruction. [Validation reports](release_checks/v1.1.0-llm-v124-v125/)
+are separate from the frozen source. Internal reasoning streams and restricted
+upstream data are excluded. This is not a self-contained restricted-data physical rerun.
+
+**Everything below, and the original root-level manuscript/data, describes the older
+v118 release. Its potential definitions, results and six-author metadata must not
+be used as the September 2026 manuscript's current results or author list.**
+
+## Historical v118 release
+
 This repository contains the six-author v118 reproducibility release for **Evidence-bounded global floating photovoltaic resource for large lakes and mapped reservoirs**.
 
 ## Validated result

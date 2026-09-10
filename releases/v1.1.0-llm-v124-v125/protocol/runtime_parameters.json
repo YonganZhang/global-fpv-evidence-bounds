@@ -1,0 +1,127 @@
+{
+  "version": "v1.1.0-llm-v124-v125",
+  "prompt_version": "fpv-separated-direct-v124-01",
+  "accepted_primary": 4701,
+  "accepted_comparison": 471,
+  "rejected_attempts": 18,
+  "date_range_utc": [
+    "2026-09-08T13:03:56.944026+00:00",
+    "2026-09-09T09:56:46.389835+00:00"
+  ],
+  "counts": [
+    {
+      "provider": "claude",
+      "dimension": "country",
+      "count": 18
+    },
+    {
+      "provider": "claude",
+      "dimension": "ecology",
+      "count": 113
+    },
+    {
+      "provider": "claude",
+      "dimension": "engineering",
+      "count": 108
+    },
+    {
+      "provider": "claude",
+      "dimension": "province",
+      "count": 232
+    },
+    {
+      "provider": "codex",
+      "dimension": "country",
+      "count": 179
+    },
+    {
+      "provider": "codex",
+      "dimension": "ecology",
+      "count": 1127
+    },
+    {
+      "provider": "codex",
+      "dimension": "engineering",
+      "count": 1082
+    },
+    {
+      "provider": "codex",
+      "dimension": "province",
+      "count": 2313
+    }
+  ],
+  "inference": {
+    "temperature": "not specified in actual SDK call",
+    "top_p": "not specified",
+    "seed": "not specified",
+    "max_output_tokens": "not specified",
+    "effort": "high",
+    "turns": 1,
+    "process_timeout_seconds": 120
+  },
+  "providers": {
+    "codex": {
+      "requested_model": "gpt-6-astra",
+      "resolved_model": null,
+      "model_id_source": "requested_configuration_not_independently_observed",
+      "sdk_version": "0.147.0",
+      "settings": {
+        "sandbox": "read-only",
+        "approval": "deny-all",
+        "overrides": [
+          "forced_login_method=\"chatgpt\"",
+          "web_search=\"disabled\"",
+          "mcp_servers.codegraph.enabled=false",
+          "mcp_servers.openaiDeveloperDocs.enabled=false",
+          "features.plugins=false",
+          "features.apps=false",
+          "features.hooks=false"
+        ]
+      },
+      "tools_exposed_empty_verified": false,
+      "runtime_versions": {
+        "codex_runtime": "codex-cli 0.153.4",
+        "claude_runtime": "2.1.263 (Claude Code)"
+      }
+    },
+    "claude": {
+      "requested_model": "claude-opus-5[1m]",
+      "resolved_model": "claude-opus-5[1m]",
+      "model_id_source": "sdk_init_event",
+      "sdk_version": "0.2.152",
+      "settings": {
+        "tools": [],
+        "setting_sources": [],
+        "mcp_servers": {},
+        "permission": "dontAsk"
+      },
+      "tools_exposed_empty_verified": false,
+      "runtime_versions": {
+        "codex_runtime": "codex-cli 0.153.4",
+        "claude_runtime": "2.1.263 (Claude Code)"
+      }
+    }
+  },
+  "transport_instructions": {
+    "codex": {
+      "policy_destination": "thread_start.base_instructions",
+      "developer_instructions": "Do not call tools. Return the requested JSON only.",
+      "schema_destination": "thread.run.output_schema"
+    },
+    "claude": {
+      "policy_destination": "ClaudeAgentOptions.system_prompt",
+      "schema_destination": "prompt-only JSON shape plus local validation; SDK output_format not used"
+    }
+  },
+  "not_used": "temperature=0.2, max_tokens=900 and response_format from the older API request constructor were NOT forwarded to the SDK worker. That function was reused for prompt text only.",
+  "retry_policy": "One ordinary unanswered/invalid-format retry; third attempt only after two unanswered process_timeout failures. Accepted null/low-confidence scores are never rerolled.",
+  "redaction": "Entire response.raw_events stream excluded, including reasoning events. Final response strings, parsed scores, jobs and recorded model metadata are unchanged.",
+  "discarded_event_types": {
+    "userMessage": 4701,
+    "reasoning": 4631,
+    "agentMessage": 4701,
+    "system": 2454,
+    "assistant": 958,
+    "result": 480
+  }
+}

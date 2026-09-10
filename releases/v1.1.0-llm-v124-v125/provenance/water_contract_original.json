@@ -1,0 +1,36 @@
+{
+  "status": "conditional_jin_like_adaptation_not_strict_reproduction",
+  "method": "Eafter_total=(1-c)*Penman(Rn_star), covered_evaporation=0; Rn_star=(1-c)*Rn_free+c*Rn_cover",
+  "coverage": "c=retained_area_km2/full_water_surface_area_km2; retained areas and all generation/demand fields copied from v124",
+  "constants": {
+    "albedo": 0.08,
+    "gamma_kpa_per_c": 0.067381125,
+    "lambda": "2.501-0.002361*T",
+    "max_area_km2": 30.0
+  },
+  "approximations": [
+    "Tmax=Tmin=Tmean",
+    "Koppen-based RH from legacy calculate_penman.py",
+    "ERA5 GHI replaces original CERES Rs",
+    "fixed gamma as in Jin MATLAB"
+  ],
+  "known_evaporation_cohort": 176478,
+  "jin_reference": {
+    "repository": "https://github.com/YubinJin98/Floating-solar-power",
+    "commit": "df38ec94e87ca896a4c86c49fe8e659c8ceabb37",
+    "WaterSavings.m_sha256": "45a6d0fd4e65b1d7278c8884f25927556114a7493d9d8dcde4a7df1b6251d00b"
+  },
+  "input_sha256": {
+    "_outputs/v124/global/lean/weighted_levels/primaryrecovery01/present_benefits/waterbody_benefits.parquet": "36648e305566916562d9c31c244ae1076597519b7968e0c249a32436d2724ed7",
+    "_outputs/v124/global/lean/weighted_levels/primaryrecovery01/present_benefits/country_benefits.csv": "1d3dea5227996aa87c957c93ed2ed0b0386dd8f334d1296128ccfec7c058360d",
+    "_outputs/v124/global/lean/weighted_levels/primaryrecovery01/present_benefits/global_benefits.csv": "715c05876974b2ab75b8774f8e4f65fe8c2f61b912eaab6966f85347cdd64bb2",
+    "_outputs/v117/data/fpv_reference_inventory_v117.parquet": "4addb38ab5766248c7fa0b65cd585c91a47b3037cf5cc2114684f6a4b5f9c96a",
+    "Dataset/data_processed/ERA5/era5_monthly_climatology.csv": "a7210ec8705ad50277e8b4356dd861f5937b67a02c6827e3f05cf3c06360c8dc",
+    "Dataset/data_processed/ERA5/era5_lakes_monthly_climatology.csv": "6a42d3f257ca1d5f4b9544f96d7f0541c8305ba9efbe0c2d98658d5fc62ae72d",
+    "Dataset/data_processed/evaporation/evaporation_savings.csv": "61f90a7318e6407a1a4e0c523050c78252a4a9226ecd0d1430f9bc727da46d64"
+  },
+  "code_sha256": {
+    "src/analysis/run_jin_water_v125.py": "c6f523e1ce7124a516c0ebf6592327ea2a8c8dd8c8597af72ac1d16bf9996980",
+    "src/analysis/jin_evaporation_v125.py": "31315aa279ccb9737be4597e33240f2150b8866ae32187f0c82740802614b59f"
+  }
+}

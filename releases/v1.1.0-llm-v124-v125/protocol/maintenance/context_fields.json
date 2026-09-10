@@ -1,0 +1,12 @@
+{
+  "stored_dimension": "engineering",
+  "public_task": "maintenance",
+  "ordered_fields": [
+    "waterbody_type",
+    "koppen_zone",
+    "country"
+  ],
+  "placeholder": "{{context_json}}",
+  "serialization": "json.dumps(context, ensure_ascii=False), preserve request key order",
+  "template_origin": "Extracted from saved job; verified against hash-matched original prompt source, not rewritten."
+}

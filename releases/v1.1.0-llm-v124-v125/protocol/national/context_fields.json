@@ -1,0 +1,11 @@
+{
+  "stored_dimension": "country",
+  "public_task": "national",
+  "ordered_fields": [
+    "country",
+    "assessment_date"
+  ],
+  "placeholder": "{{context_json}}",
+  "serialization": "json.dumps(context, ensure_ascii=False), preserve request key order",
+  "template_origin": "Extracted from saved job; verified against hash-matched original prompt source, not rewritten."
+}

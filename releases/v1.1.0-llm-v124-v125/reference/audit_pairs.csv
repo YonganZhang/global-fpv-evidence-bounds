@@ -1,0 +1,490 @@
+entity_id,dimension,field,claude_score,codex_score,codex_is_null,claude_is_null,null_disagreement,claude_minus_codex,absolute_delta,stratum_region,stratum_waterbody_type,stratum_population,stratum_sample_size
+province_cf1760f08d0a956ed1f9,province,implementation_offset,-0.04,-0.08,False,False,False,0.04,0.04,North America,all,253,26
+ecology_0ece1c88b4fa8b77f6ef,ecology,ecological_suitability,0.35,0.4,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,lake,188,17
+ecology_13f622099f9ad203c680,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Europe,lake,57,6
+ecology_0a560f51efe3427be96f,ecology,ecological_suitability,0.62,0.5,False,False,False,0.12,0.12,North America,reservoir,121,11
+ecology_17e46dd7107425034363,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Europe,reservoir,45,5
+ecology_044e1d95026ec42300d7,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Oceania,reservoir,32,4
+ecology_079429a5f45cf736b511,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Asia+Europe,lake,20,3
+ecology_0a2d6d70933e36d17756,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Europe,lake,57,6
+ecology_1832f39ab6f787962ab7,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+ecology_10be9845c2ff4eda449f,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,South America,lake,90,8
+ecology_20c3402f288f05af2d6d,ecology,ecological_suitability,0.62,0.5,False,False,False,0.12,0.12,Europe,reservoir,45,5
+ecology_18cee5d6afb7befd7932,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Asia,lake,188,17
+ecology_1b459817b840f6083a33,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,North America,reservoir,121,11
+ecology_15d6f607053e046a6551,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,Asia,lake,188,17
+ecology_155245e27590494b787a,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+ecology_a534ad46a305f0c9248f,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,Asia,lake,188,17
+ecology_740e0b466dc4c485ff53,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Oceania,reservoir,32,4
+engineering_955cb322df8455d69fff,engineering,maintenance_ease,0.3,0.3,False,False,False,0.0,0.0,Oceania,reservoir,17,2
+engineering_023d9d1d82e4e8520bc4,engineering,maintenance_ease,0.5,0.6,False,False,False,-0.09999999999999998,0.09999999999999998,Africa,reservoir,93,9
+ecology_afb38f4bc56c5519331b,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,North America,reservoir,121,11
+engineering_770e89bafb7527fca6e5,engineering,maintenance_ease,0.55,0.65,False,False,False,-0.09999999999999998,0.09999999999999998,Asia,lake,160,15
+engineering_f954295d4f89bbe0fd53,engineering,maintenance_ease,0.6,0.6,False,False,False,0.0,0.0,Europe,lake,105,10
+province_1449c8b1b6f2e63604b4,province,implementation_offset,0.06,0.07,False,False,False,-0.010000000000000009,0.010000000000000009,North America,all,253,26
+country_400a4c444effaa979700,country,renewable_support,0.75,0.8,False,False,False,-0.050000000000000044,0.050000000000000044,Europe,all,38,3
+country_400a4c444effaa979700,country,finance_delivery,0.75,0.85,False,False,False,-0.09999999999999998,0.09999999999999998,Europe,all,38,3
+ecology_4add5d53e2f93c7f2fcd,ecology,ecological_suitability,0.45,0.45,False,False,False,0.0,0.0,South America,reservoir,59,6
+province_412a551a82647562ca92,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+engineering_65ace1e1885496799f96,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,Europe,reservoir,124,12
+engineering_9c6df2f80fe4f4978625,engineering,maintenance_ease,0.4,0.3,False,False,False,0.10000000000000003,0.10000000000000003,Asia,lake,160,15
+province_16c44d7d2cbed860bb3e,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_2b0d53fdddcfba5ae72b,province,implementation_offset,0.03,,True,False,True,,,North America,all,253,26
+ecology_c16e8455deae0472baf2,ecology,ecological_suitability,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,North America,lake,154,14
+engineering_b87e863cd9dccb91b519,engineering,maintenance_ease,0.35,0.45,False,False,False,-0.10000000000000003,0.10000000000000003,Asia,lake,160,15
+engineering_2376d9a48cbea4b74c9c,engineering,maintenance_ease,0.6,0.75,False,False,False,-0.15000000000000002,0.15000000000000002,Africa,lake,130,12
+province_3e861fb03677a5325ad2,province,implementation_offset,0.05,,True,False,True,,,Oceania,all,59,7
+engineering_9b85ddfd2f0a053d58b7,engineering,maintenance_ease,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,reservoir,133,13
+engineering_bf135659885c16270672,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,Asia,reservoir,133,13
+province_37ccae889aa491dacaab,province,implementation_offset,0.05,,True,False,True,,,Asia,all,701,69
+engineering_6d71117d8dccc4370d36,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,South America,reservoir,47,5
+engineering_267783acb94e1446ed3f,engineering,maintenance_ease,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,North America,lake,93,9
+ecology_c538ce2ddd6c777778e2,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Africa,lake,86,8
+province_1d84303205245b1f4258,province,implementation_offset,0.03,,True,False,True,,,Oceania,all,59,7
+ecology_b086713a668d92b49db2,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Asia,lake,188,17
+ecology_6f0defbf419e846d3f1a,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,North America+South America,lake,2,1
+engineering_0aadd21b105cabe7e1b8,engineering,maintenance_ease,0.55,0.65,False,False,False,-0.09999999999999998,0.09999999999999998,Africa,reservoir,93,9
+ecology_9f7e45639fa107c9b134,ecology,ecological_suitability,0.2,0.35,False,False,False,-0.14999999999999997,0.14999999999999997,South America,lake,90,8
+engineering_9c914999f06c720c8a7b,engineering,maintenance_ease,0.65,0.7,False,False,False,-0.04999999999999993,0.04999999999999993,Europe,lake,105,10
+engineering_5652a81e4153d7c383f1,engineering,maintenance_ease,0.35,0.3,False,False,False,0.04999999999999999,0.04999999999999999,North America,lake,93,9
+province_04bea776af88c5ffefc4,province,implementation_offset,0.03,,True,False,True,,,South America,all,215,22
+ecology_81cf1852932fb86d908a,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,Europe,lake,57,6
+province_3b46b0766317b227857e,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+country_cb20fc99c653f4a7cca7,country,renewable_support,0.15,0.3,False,False,False,-0.15,0.15,South America,all,12,2
+country_cb20fc99c653f4a7cca7,country,finance_delivery,0.07,0.15,False,False,False,-0.07999999999999999,0.07999999999999999,South America,all,12,2
+engineering_5f443c42097a795fbeea,engineering,maintenance_ease,0.55,0.6,False,False,False,-0.04999999999999993,0.04999999999999993,South America,reservoir,47,5
+engineering_58a25f1b09651fa2f8d1,engineering,maintenance_ease,0.68,0.65,False,False,False,0.030000000000000027,0.030000000000000027,North America,reservoir,67,7
+engineering_c15615f0dd01855f6ccd,engineering,maintenance_ease,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,North America,lake,93,9
+engineering_1ea78729563e8e929cc0,engineering,maintenance_ease,0.75,0.65,False,False,False,0.09999999999999998,0.09999999999999998,Europe,reservoir,124,12
+ecology_6af30be1ba8d73206646,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Europe,lake,57,6
+ecology_2e9af2ba3feff62c2ebb,ecology,ecological_suitability,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,Asia,lake,188,17
+engineering_9c8ee844cd67dfd55adb,engineering,maintenance_ease,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,Asia,reservoir,133,13
+engineering_37324a4543515b552086,engineering,maintenance_ease,0.35,0.4,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,lake,160,15
+ecology_8686b2257631ffe46099,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,North America,lake,154,14
+ecology_bdd776ea2709f82a363f,ecology,ecological_suitability,0.62,0.5,False,False,False,0.12,0.12,North America,reservoir,121,11
+province_26a8ddc34401bab17d80,province,implementation_offset,-0.05,,True,False,True,,,Africa,all,447,45
+engineering_07f2c8b6bba27bc40b96,engineering,maintenance_ease,0.4,0.4,False,False,False,0.0,0.0,South America,reservoir,47,5
+ecology_9b70f536ae074ed73812,ecology,ecological_suitability,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,North America,lake,154,14
+engineering_54ccf29389b18d28c429,engineering,maintenance_ease,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,lake,160,15
+engineering_a0e54ec559c88240976c,engineering,maintenance_ease,0.75,0.65,False,False,False,0.09999999999999998,0.09999999999999998,Europe,lake,105,10
+engineering_5b61d48386d75652156f,engineering,maintenance_ease,0.3,0.35,False,False,False,-0.04999999999999999,0.04999999999999999,Africa,lake,130,12
+ecology_98342306eb6b64e899ab,ecology,ecological_suitability,0.62,0.5,False,False,False,0.12,0.12,South America,reservoir,59,6
+province_17179f33c85e04ad48f0,province,implementation_offset,0.07,0.04,False,False,False,0.030000000000000006,0.030000000000000006,Europe,all,638,63
+province_1d8c488f2c52580ce28d,province,implementation_offset,0.06,0.04,False,False,False,0.019999999999999997,0.019999999999999997,Europe,all,638,63
+province_1ecd215872e48442ee14,province,implementation_offset,0.02,,True,False,True,,,South America,all,215,22
+ecology_71a5da93010a77086f46,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,North America,lake,154,14
+ecology_45d4fca8ee4be1ba26a3,ecology,ecological_suitability,0.65,0.5,False,False,False,0.15000000000000002,0.15000000000000002,Asia,reservoir,145,13
+engineering_248feb451bf30ad4a1c2,engineering,maintenance_ease,0.65,0.6,False,False,False,0.050000000000000044,0.050000000000000044,Asia,lake,160,15
+ecology_2c1dd4abc99ba82b82b9,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,Asia,lake,188,17
+country_bade39614519bfd00587,country,renewable_support,0.8,0.8,False,False,False,0.0,0.0,Asia,all,46,3
+country_bade39614519bfd00587,country,finance_delivery,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,all,46,3
+province_2e3be9ff4df635962532,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,Asia,all,701,69
+province_1d92653798c363d8b031,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+province_2a518cd2c5521023d8cd,province,implementation_offset,0.07,,True,False,True,,,Europe,all,638,63
+engineering_ce4003cb6c17f23a38c3,engineering,maintenance_ease,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,lake,160,15
+province_0a4dfad641f3abd3d63e,province,implementation_offset,0.02,,True,False,True,,,Asia,all,701,69
+province_0c9a6553c3a793788995,province,implementation_offset,-0.05,,True,False,True,,,North America,all,253,26
+ecology_63b24e0a7377b5559d16,ecology,ecological_suitability,0.25,0.45,False,False,False,-0.2,0.2,North America,lake,154,14
+province_08643c2974f64cf0f1e0,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_4a0c7c86857bb84e4d16,province,implementation_offset,-0.1,-0.07,False,False,False,-0.03,0.03,Asia,all,701,69
+ecology_4fc54138e0f69b8768af,ecology,ecological_suitability,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,Asia,lake,188,17
+ecology_929eede1126a1fbd8256,ecology,ecological_suitability,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,Asia,lake,188,17
+country_51eb321529ed6f21e46d,country,renewable_support,0.85,0.8,False,False,False,0.04999999999999993,0.04999999999999993,Asia+Europe+North America+South America,all,1,1
+country_51eb321529ed6f21e46d,country,finance_delivery,0.75,0.75,False,False,False,0.0,0.0,Asia+Europe+North America+South America,all,1,1
+engineering_566d2aa65b0509f74550,engineering,maintenance_ease,0.6,0.55,False,False,False,0.04999999999999993,0.04999999999999993,Europe,reservoir,124,12
+engineering_6d2c2ed7879f364d4dc9,engineering,maintenance_ease,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,reservoir,133,13
+province_11179b552be48749b0d0,province,implementation_offset,0.04,,True,False,True,,,Europe,all,638,63
+ecology_f2610a8dad9067607655,ecology,ecological_suitability,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,Oceania,lake,60,6
+engineering_6f9c0922963916e1e7d5,engineering,maintenance_ease,0.3,0.3,False,False,False,0.0,0.0,Oceania,lake,29,4
+engineering_36a7b951611e6193411f,engineering,maintenance_ease,0.62,0.65,False,False,False,-0.030000000000000027,0.030000000000000027,North America,lake,93,9
+ecology_edb17f64e3975fd65e70,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Europe,reservoir,45,5
+engineering_f08c245e521a0e0d5c16,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,Asia,reservoir,133,13
+ecology_b13570e7526bdece092d,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,South America,reservoir,59,6
+engineering_c399ff076f09a5abc497,engineering,maintenance_ease,0.65,0.6,False,False,False,0.050000000000000044,0.050000000000000044,Europe,reservoir,124,12
+engineering_acdcb3162ddd37cb8df6,engineering,maintenance_ease,0.65,0.6,False,False,False,0.050000000000000044,0.050000000000000044,Europe,lake,105,10
+engineering_881d6340cd69250a4f57,engineering,maintenance_ease,0.72,0.65,False,False,False,0.06999999999999995,0.06999999999999995,North America,reservoir,67,7
+engineering_a1563fc6a7ae38bfad69,engineering,maintenance_ease,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,South America,lake,82,8
+ecology_37b0877674717cb53e86,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,South America,reservoir,59,6
+engineering_6d77ef8845106229b34b,engineering,maintenance_ease,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,North America,lake,93,9
+country_18c58f2bd43120ae2f80,country,renewable_support,0.75,0.7,False,False,False,0.050000000000000044,0.050000000000000044,Africa,all,49,3
+country_18c58f2bd43120ae2f80,country,finance_delivery,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Africa,all,49,3
+province_10d1ff6c5aeb0e28f9dd,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+ecology_c22f096ece7fd40ee10b,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Asia,lake,188,17
+province_31be087ca12e1f5d0521,province,implementation_offset,,,True,True,False,,,Europe,all,638,63
+ecology_961315d2c923e0e9720a,ecology,ecological_suitability,0.2,0.35,False,False,False,-0.14999999999999997,0.14999999999999997,Africa,lake,86,8
+ecology_23fe2f24913284d9c1b2,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,Asia,lake,188,17
+ecology_db81da8c79646f3418ca,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Africa,lake,86,8
+engineering_3229c6314d6852527927,engineering,maintenance_ease,0.35,0.3,False,False,False,0.04999999999999999,0.04999999999999999,North America,lake,93,9
+province_10a2434a9ad59dfd8542,province,implementation_offset,-0.07,,True,False,True,,,Africa,all,447,45
+ecology_7a373e511f7dcf63b652,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+engineering_ebfbddcaa3c86bf79293,engineering,maintenance_ease,0.62,0.45,False,False,False,0.16999999999999998,0.16999999999999998,South America,lake,82,8
+ecology_9950c7780fc0f6a32123,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,South America,lake,90,8
+country_54b98e9c3ea165ab4c7c,country,renewable_support,0.72,0.75,False,False,False,-0.030000000000000027,0.030000000000000027,North America,all,19,2
+country_54b98e9c3ea165ab4c7c,country,finance_delivery,0.58,0.6,False,False,False,-0.020000000000000018,0.020000000000000018,North America,all,19,2
+country_b40e96fae90184c24b30,country,renewable_support,0.3,0.3,False,False,False,0.0,0.0,Europe,all,38,3
+country_b40e96fae90184c24b30,country,finance_delivery,0.15,0.2,False,False,False,-0.05000000000000002,0.05000000000000002,Europe,all,38,3
+engineering_30487a6888169e18f47a,engineering,maintenance_ease,0.7,0.65,False,False,False,0.04999999999999993,0.04999999999999993,North America,lake,93,9
+province_382b6bca93b97a938ce5,province,implementation_offset,0.05,,True,False,True,,,Europe,all,638,63
+province_1d1c0ec30ace03f5c3e3,province,implementation_offset,0.02,,True,False,True,,,North America,all,253,26
+ecology_a218d984f1173f1be343,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,North America,lake,154,14
+engineering_38a112f97fdb09433294,engineering,maintenance_ease,0.62,0.6,False,False,False,0.020000000000000018,0.020000000000000018,North America,reservoir,67,7
+province_03d2fa6089eb718150ff,province,implementation_offset,0.05,,True,False,True,,,Asia,all,701,69
+ecology_cbb4a95793a41aeb86e8,ecology,ecological_suitability,0.62,0.5,False,False,False,0.12,0.12,North America,reservoir,121,11
+engineering_7288fcb9ac4db0540c6d,engineering,maintenance_ease,0.65,0.6,False,False,False,0.050000000000000044,0.050000000000000044,Europe,reservoir,124,12
+province_2090fb9b3bd0a46f7359,province,implementation_offset,-0.04,,True,False,True,,,Europe,all,638,63
+ecology_d505b758fbff9f630011,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Africa,lake,86,8
+engineering_dd574216f41002d4c969,engineering,maintenance_ease,0.55,0.6,False,False,False,-0.04999999999999993,0.04999999999999993,Europe+North America,lake,1,1
+province_1c20553b5be0f8a473e8,province,implementation_offset,-0.1,,True,False,True,,,Asia,all,701,69
+engineering_0e43f8ab9c6016440562,engineering,maintenance_ease,0.35,0.4,False,False,False,-0.050000000000000044,0.050000000000000044,Africa,reservoir,93,9
+ecology_70c1afd3b9ee16be6bbe,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Africa,reservoir,55,6
+province_3bb780e0d3e07f44212b,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+engineering_794dd045a0acc6e8cd9c,engineering,maintenance_ease,0.5,0.65,False,False,False,-0.15000000000000002,0.15000000000000002,Africa,reservoir,93,9
+province_3d9367044d5be77f9078,province,implementation_offset,0.05,,True,False,True,,,North America,all,253,26
+ecology_2481949e9ca3532acedb,ecology,ecological_suitability,0.15,0.35,False,False,False,-0.19999999999999998,0.19999999999999998,Europe+South America,lake,1,1
+engineering_695f2bf0342140c84c28,engineering,maintenance_ease,0.4,0.45,False,False,False,-0.04999999999999999,0.04999999999999999,Asia,reservoir,133,13
+engineering_9b1e1256dbeb39d74599,engineering,maintenance_ease,0.68,0.65,False,False,False,0.030000000000000027,0.030000000000000027,Asia,reservoir,133,13
+country_59f6b8edb984fce5c763,country,renewable_support,0.72,0.65,False,False,False,0.06999999999999995,0.06999999999999995,Asia,all,46,3
+country_59f6b8edb984fce5c763,country,finance_delivery,0.68,0.45,False,False,False,0.23000000000000004,0.23000000000000004,Asia,all,46,3
+engineering_27be0fcc741c0f7e9c0a,engineering,maintenance_ease,0.5,0.45,False,False,False,0.04999999999999999,0.04999999999999999,South America,lake,82,8
+engineering_32035b07b88b7d70f7c7,engineering,maintenance_ease,0.55,0.45,False,False,False,0.10000000000000003,0.10000000000000003,Europe,reservoir,124,12
+engineering_f6ab5afb6b17c76d185e,engineering,maintenance_ease,0.35,0.3,False,False,False,0.04999999999999999,0.04999999999999999,Africa,reservoir,93,9
+engineering_4bd84a75cf0a2ca2124b,engineering,maintenance_ease,0.62,0.5,False,False,False,0.12,0.12,Europe,reservoir,124,12
+engineering_07e871ffe8610ee630ac,engineering,maintenance_ease,0.3,0.35,False,False,False,-0.04999999999999999,0.04999999999999999,Africa,lake,130,12
+ecology_f8ed21b0b12acd9df1fc,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,North America,reservoir,121,11
+ecology_30558e41746931b5a8ad,ecology,ecological_suitability,0.2,0.35,False,False,False,-0.14999999999999997,0.14999999999999997,Oceania,lake,60,6
+engineering_4ecc4820bc2c6f8b33e5,engineering,maintenance_ease,0.25,0.3,False,False,False,-0.04999999999999999,0.04999999999999999,South America,lake,82,8
+engineering_90e639c87f4bbef6ebe7,engineering,maintenance_ease,0.35,0.4,False,False,False,-0.050000000000000044,0.050000000000000044,Africa,lake,130,12
+ecology_87ae3d1d1ac34aa1e76f,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,Oceania,lake,60,6
+engineering_71926ffdefcbe96bea07,engineering,maintenance_ease,0.7,0.65,False,False,False,0.04999999999999993,0.04999999999999993,Asia,lake,160,15
+ecology_4184b11b31ace852c263,ecology,ecological_suitability,0.15,0.3,False,False,False,-0.15,0.15,Asia,lake,188,17
+ecology_d7c78d9b25cbd54320ac,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+engineering_a857b97dc73e7f0ad03e,engineering,maintenance_ease,0.3,0.3,False,False,False,0.0,0.0,Asia,reservoir,133,13
+province_01972d44f1b1e09f99ee,province,implementation_offset,-0.02,,True,False,True,,,Africa,all,447,45
+ecology_f7d3152d6c2532f28f53,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Asia,lake,188,17
+province_4a41381b810692e4c870,province,implementation_offset,-0.05,,True,False,True,,,Oceania,all,59,7
+engineering_8e7c64675805b20d4fc2,engineering,maintenance_ease,0.7,0.65,False,False,False,0.04999999999999993,0.04999999999999993,Europe,reservoir,124,12
+ecology_94502256bc60737560f9,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Africa,lake,86,8
+ecology_fe8aed4691b4c621333a,ecology,ecological_suitability,0.5,0.5,False,False,False,0.0,0.0,South America,reservoir,59,6
+province_02bd8d12b6ae2a8010c9,province,implementation_offset,0.04,,True,False,True,,,North America,all,253,26
+engineering_191c6e5ee2e2357f0890,engineering,maintenance_ease,0.6,0.6,False,False,False,0.0,0.0,Africa,reservoir,93,9
+country_24295363184ef2d5c43f,country,renewable_support,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Oceania,all,10,1
+country_24295363184ef2d5c43f,country,finance_delivery,0.28,0.35,False,False,False,-0.06999999999999995,0.06999999999999995,Oceania,all,10,1
+ecology_406217823f62df42e4cf,ecology,ecological_suitability,0.5,0.5,False,False,False,0.0,0.0,Africa,reservoir,55,6
+engineering_ece6fbe492c785060269,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,Africa,reservoir,93,9
+ecology_2c6ea1f7f54bb1de8986,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Europe,reservoir,45,5
+ecology_7fab3e607d0598ef8ff8,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,South America,lake,90,8
+ecology_9c2b4e959ecff1d0a949,ecology,ecological_suitability,0.15,0.35,False,False,False,-0.19999999999999998,0.19999999999999998,Africa,lake,86,8
+province_42892ff17d378006be4b,province,implementation_offset,0.03,,True,False,True,,,South America,all,215,22
+province_0f2547a44df0d312964a,province,implementation_offset,-0.04,,True,False,True,,,South America,all,215,22
+ecology_e7445139fbc41a55d6ed,ecology,ecological_suitability,0.1,0.3,False,False,False,-0.19999999999999998,0.19999999999999998,South America,lake,90,8
+ecology_bb7810d15dfde74e71b3,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+ecology_9ed7844da315bc530165,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,South America,lake,90,8
+country_7471f7de2b38958f9061,country,renewable_support,0.68,0.65,False,False,False,0.030000000000000027,0.030000000000000027,South America,all,12,2
+country_7471f7de2b38958f9061,country,finance_delivery,0.52,0.5,False,False,False,0.020000000000000018,0.020000000000000018,South America,all,12,2
+engineering_761615053a4cc002aed8,engineering,maintenance_ease,0.35,0.35,False,False,False,0.0,0.0,South America,lake,82,8
+province_2019fbb8f99689bdbc7d,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+province_3d9ee265d6d72dd3f84f,province,implementation_offset,-0.04,,True,False,True,,,Europe,all,638,63
+ecology_448d087c316d4a8ae1cc,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,North America,reservoir,121,11
+engineering_b57e323b39eb9920b4b3,engineering,maintenance_ease,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Oceania,lake,29,4
+engineering_2da27c7deb928f8db7cb,engineering,maintenance_ease,0.4,0.4,False,False,False,0.0,0.0,South America,reservoir,47,5
+ecology_a5265b865442a24d3ef9,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Asia,reservoir,145,13
+province_23fde9cfd0b68dfa28a0,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,South America,all,215,22
+ecology_a0ffd352fa849f613821,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Europe+North America,lake,1,1
+province_430cdcca4ce2cae4dcea,province,implementation_offset,-0.1,0.02,False,False,False,-0.12000000000000001,0.12000000000000001,Europe,all,638,63
+province_4a38798ba9b0750233d2,province,implementation_offset,-0.03,,True,False,True,,,Europe,all,638,63
+engineering_f9e8f0aeba40b37e9d46,engineering,maintenance_ease,0.35,0.4,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,lake,160,15
+ecology_348fcb3f87a57c7b464c,ecology,ecological_suitability,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,North America,lake,154,14
+province_0f177b376568cd31768e,province,implementation_offset,,,True,True,False,,,Europe,all,638,63
+province_3835c9be9cf7aac46350,province,implementation_offset,0.04,0.04,False,False,False,0.0,0.0,Asia,all,701,69
+engineering_8550410d863cf5f65881,engineering,maintenance_ease,0.72,0.6,False,False,False,0.12,0.12,Asia,lake,160,15
+ecology_80cf78408c9ecb34f16d,ecology,ecological_suitability,0.15,0.3,False,False,False,-0.15,0.15,Asia+Oceania,lake,6,1
+province_1584dc8fbfcaf516b644,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+ecology_d289da91a029f20256ad,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Africa,reservoir,55,6
+province_3b6d6fc98b12b4992b88,province,implementation_offset,-0.03,,True,False,True,,,Asia,all,701,69
+province_2749f75de245109a5416,province,implementation_offset,0.09,0.04,False,False,False,0.049999999999999996,0.049999999999999996,Asia,all,701,69
+engineering_4b27009d5082b5542717,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,North America,lake,93,9
+province_271f5eb8271b9f0d5410,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+ecology_7bee84c7d1b34f3271c0,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,North America,lake,154,14
+engineering_f108d867df170293aa8c,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,Asia,lake,160,15
+engineering_4c52077a9278cd3e1320,engineering,maintenance_ease,0.4,0.4,False,False,False,0.0,0.0,Asia,lake,160,15
+engineering_4af4a98c9f6463c78d78,engineering,maintenance_ease,0.3,0.35,False,False,False,-0.04999999999999999,0.04999999999999999,Africa,reservoir,93,9
+province_4a9b6f0c0b900aae9070,province,implementation_offset,0.02,,True,False,True,,,Asia,all,701,69
+province_2f567d30cb54cfb9afd5,province,implementation_offset,0.04,0.04,False,False,False,0.0,0.0,North America,all,253,26
+province_213c289fa4438399433f,province,implementation_offset,0.05,,True,False,True,,,South America,all,215,22
+ecology_a58bbf1388f857865ed4,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Asia+Europe,lake,20,3
+country_1d9aefa254248467e488,country,renewable_support,0.7,0.8,False,False,False,-0.10000000000000009,0.10000000000000009,Europe+North America,all,2,1
+country_1d9aefa254248467e488,country,finance_delivery,0.8,0.8,False,False,False,0.0,0.0,Europe+North America,all,2,1
+ecology_927b5456c8a1ea9f8053,ecology,ecological_suitability,0.45,0.5,False,False,False,-0.04999999999999999,0.04999999999999999,Oceania,reservoir,32,4
+province_01cc8f196f562d7bf21e,province,implementation_offset,-0.04,,True,False,True,,,Europe,all,638,63
+engineering_128511a8075fa54c7f69,engineering,maintenance_ease,0.72,0.65,False,False,False,0.06999999999999995,0.06999999999999995,Europe,reservoir,124,12
+province_24f7836be06d35cb6756,province,implementation_offset,-0.07,-0.06,False,False,False,-0.010000000000000009,0.010000000000000009,Asia,all,701,69
+engineering_29ebba16fe83aee9c4a1,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,South America,reservoir,47,5
+engineering_d367f53d2c71d93c9d0d,engineering,maintenance_ease,0.55,0.65,False,False,False,-0.09999999999999998,0.09999999999999998,Asia,lake,160,15
+engineering_7918e2f522ea2a0dadfa,engineering,maintenance_ease,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,reservoir,133,13
+engineering_542f5081dec6fc43bd3c,engineering,maintenance_ease,0.2,0.5,False,False,False,-0.3,0.3,Oceania,lake,29,4
+province_1c9ec4ab506505f1678e,province,implementation_offset,-0.13,,True,False,True,,,North America,all,253,26
+province_29516bdb18e1234c4a89,province,implementation_offset,0.03,,True,False,True,,,North America,all,253,26
+engineering_68ed87255c6f3d586125,engineering,maintenance_ease,0.35,0.4,False,False,False,-0.050000000000000044,0.050000000000000044,South America,lake,82,8
+ecology_36905b1390602ea5b1d3,ecology,ecological_suitability,0.6,0.55,False,False,False,0.04999999999999993,0.04999999999999993,North America,reservoir,121,11
+ecology_3f27a39d820546fd0ba3,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Africa,reservoir,55,6
+engineering_cce6f92e554f678d6ab4,engineering,maintenance_ease,0.3,0.3,False,False,False,0.0,0.0,North America,reservoir,67,7
+engineering_8b8f086339d0711897a7,engineering,maintenance_ease,0.45,0.65,False,False,False,-0.2,0.2,Africa,lake,130,12
+ecology_369a47cd868b9034aba7,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Africa,reservoir,55,6
+province_2c6c3c1459293e821586,province,implementation_offset,-0.02,,True,False,True,,,South America,all,215,22
+ecology_b66cecb8f24428aca0f9,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,Oceania,lake,60,6
+ecology_78e2df06ce7d7f6071bd,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Asia,reservoir,145,13
+province_3d4860ce5cabfe71058f,province,implementation_offset,-0.08,,True,False,True,,,North America,all,253,26
+country_1d1c6bc7ad5ecbf67c17,country,renewable_support,0.68,0.65,False,False,False,0.030000000000000027,0.030000000000000027,North America,all,19,2
+country_1d1c6bc7ad5ecbf67c17,country,finance_delivery,0.45,0.4,False,False,False,0.04999999999999999,0.04999999999999999,North America,all,19,2
+country_a1f3e22a278f53997554,country,renewable_support,0.7,0.75,False,False,False,-0.050000000000000044,0.050000000000000044,Europe,all,38,3
+country_a1f3e22a278f53997554,country,finance_delivery,0.65,0.7,False,False,False,-0.04999999999999993,0.04999999999999993,Europe,all,38,3
+engineering_5098c868e214ff0c7883,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,Africa,lake,130,12
+province_331fb6ec5489181a96db,province,implementation_offset,-0.03,0.03,False,False,False,-0.06,0.06,Asia,all,701,69
+ecology_926371d06bb6591b84ed,ecology,ecological_suitability,0.45,0.4,False,False,False,0.04999999999999999,0.04999999999999999,North America,reservoir,121,11
+province_1d5fbca77a3dcd1964dc,province,implementation_offset,0.04,,True,False,True,,,Europe,all,638,63
+engineering_cd33d8ebf96c2257d1d8,engineering,maintenance_ease,0.62,0.7,False,False,False,-0.07999999999999996,0.07999999999999996,Asia,lake,160,15
+engineering_9572944a1801500a9e12,engineering,maintenance_ease,0.3,0.3,False,False,False,0.0,0.0,North America,reservoir,67,7
+engineering_a3434359501ac4d8c307,engineering,maintenance_ease,0.4,0.35,False,False,False,0.050000000000000044,0.050000000000000044,Asia,reservoir,133,13
+engineering_a7945d0d9a211f01f39d,engineering,maintenance_ease,0.68,0.6,False,False,False,0.08000000000000007,0.08000000000000007,Europe,lake,105,10
+ecology_2cb90bd0659d7ccb31bd,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,North America,lake,154,14
+ecology_401ab602f650a6bbe8da,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Europe,lake,57,6
+engineering_4777b33b5bd80f37f6b6,engineering,maintenance_ease,0.68,0.6,False,False,False,0.08000000000000007,0.08000000000000007,Europe,lake,105,10
+province_30f51eb0f6f596b7a0f4,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+ecology_bae9bdaaffa8aadfde66,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,South America,reservoir,59,6
+ecology_f6afff3ceed93c634abf,ecology,ecological_suitability,0.15,0.4,False,False,False,-0.25,0.25,North America,lake,154,14
+province_13b54d04f36e23c032db,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+engineering_bc0e438f2964a0bfa38b,engineering,maintenance_ease,0.75,0.65,False,False,False,0.09999999999999998,0.09999999999999998,Europe,lake,105,10
+province_01663ba48629ec7a9b8b,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_108dc1d718229862a6bf,province,implementation_offset,-0.03,,True,False,True,,,Asia,all,701,69
+country_80ac08af7e29aec09ff4,country,renewable_support,0.6,0.6,False,False,False,0.0,0.0,Africa,all,49,3
+country_80ac08af7e29aec09ff4,country,finance_delivery,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Africa,all,49,3
+ecology_7c21f9453cffde37c7c8,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Africa+Europe,reservoir,1,1
+province_3a865fb849384ce9cdbd,province,implementation_offset,0.06,,True,False,True,,,Europe,all,638,63
+province_192b060cbc2d8676b04c,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+engineering_dc206fe18dd094a02c8e,engineering,maintenance_ease,0.3,0.4,False,False,False,-0.10000000000000003,0.10000000000000003,North America,lake,93,9
+engineering_716f86c303b0eb8088cc,engineering,maintenance_ease,0.5,0.65,False,False,False,-0.15000000000000002,0.15000000000000002,Africa,lake,130,12
+engineering_44999556efc940ebe393,engineering,maintenance_ease,0.62,0.7,False,False,False,-0.07999999999999996,0.07999999999999996,North America,reservoir,67,7
+province_312458a7742807f4f201,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+ecology_7f7c611a57f1a8fe2005,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Africa,lake,86,8
+province_49797b087d0662fe6a45,province,implementation_offset,-0.07,,True,False,True,,,North America,all,253,26
+engineering_3e21fd4afe8aee9a3c73,engineering,maintenance_ease,0.3,0.35,False,False,False,-0.04999999999999999,0.04999999999999999,Africa,lake,130,12
+ecology_4b410d6e9eebadd59b7d,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+engineering_aae3865776abc063d98f,engineering,maintenance_ease,0.5,0.6,False,False,False,-0.09999999999999998,0.09999999999999998,South America,lake,82,8
+engineering_5ba40d027b5dd86a82b4,engineering,maintenance_ease,0.65,0.65,False,False,False,0.0,0.0,Africa,lake,130,12
+engineering_24dd1c278146068afbf8,engineering,maintenance_ease,0.6,0.6,False,False,False,0.0,0.0,South America,lake,82,8
+country_c119f69a647c654d52a7,country,renewable_support,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,North America+Oceania,all,1,1
+country_c119f69a647c654d52a7,country,finance_delivery,0.7,0.7,False,False,False,0.0,0.0,North America+Oceania,all,1,1
+engineering_c70d46b43df3d86484c1,engineering,maintenance_ease,0.35,0.3,False,False,False,0.04999999999999999,0.04999999999999999,Asia,lake,160,15
+ecology_9d34723b6588e37a4bed,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Oceania,lake,60,6
+country_0502c9afe735c49c4ddf,country,renewable_support,0.35,0.3,False,False,False,0.04999999999999999,0.04999999999999999,Africa,all,49,3
+country_0502c9afe735c49c4ddf,country,finance_delivery,0.15,0.15,False,False,False,0.0,0.0,Africa,all,49,3
+engineering_a57368d65a703898f2ca,engineering,maintenance_ease,0.62,0.6,False,False,False,0.020000000000000018,0.020000000000000018,Asia,reservoir,133,13
+engineering_d118539dd848febdb19f,engineering,maintenance_ease,0.3,0.3,False,False,False,0.0,0.0,North America+Oceania,lake,1,1
+ecology_fbc3f1e0b4fc6657a914,ecology,ecological_suitability,0.15,0.35,False,False,False,-0.19999999999999998,0.19999999999999998,North America,lake,154,14
+engineering_3c6194ab56f51a0d7232,engineering,maintenance_ease,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Africa,lake,130,12
+engineering_9c29918cde4044f455db,engineering,maintenance_ease,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Europe,reservoir,124,12
+ecology_67747c2c61891629e44b,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Africa,reservoir,55,6
+engineering_b2280f732af5c5dec564,engineering,maintenance_ease,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Oceania,reservoir,17,2
+ecology_816135b3373e9941beb6,ecology,ecological_suitability,0.1,0.35,False,False,False,-0.24999999999999997,0.24999999999999997,Europe,lake,57,6
+engineering_d5ce6a4bf7587255205d,engineering,maintenance_ease,0.55,0.65,False,False,False,-0.09999999999999998,0.09999999999999998,Asia,reservoir,133,13
+ecology_6e4ef5081050b0f054c9,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,North America,lake,154,14
+ecology_3ff8bbfc3d8d865821f4,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,South America,lake,90,8
+ecology_291983ad667d32a53201,ecology,ecological_suitability,0.55,0.5,False,False,False,0.050000000000000044,0.050000000000000044,Oceania,reservoir,32,4
+province_0eea31c138842a884d15,province,implementation_offset,-0.04,0.03,False,False,False,-0.07,0.07,Asia,all,701,69
+province_478ab203496f07c2eb4a,province,implementation_offset,-0.08,-0.08,False,False,False,0.0,0.0,Asia,all,701,69
+ecology_81b5da3ec009f014e940,ecology,ecological_suitability,0.45,0.45,False,False,False,0.0,0.0,North America,reservoir,121,11
+engineering_2b17016753a4ad9d4205,engineering,maintenance_ease,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,reservoir,133,13
+province_216e44cc5d336c2f7890,province,implementation_offset,-0.04,,True,False,True,,,Europe,all,638,63
+province_2ed3328dd0e3d22fdbcc,province,implementation_offset,,,True,True,False,,,Europe,all,638,63
+country_5f3c4db7226d84df0537,country,renewable_support,0.6,0.65,False,False,False,-0.050000000000000044,0.050000000000000044,Asia,all,46,3
+country_5f3c4db7226d84df0537,country,finance_delivery,0.28,0.35,False,False,False,-0.06999999999999995,0.06999999999999995,Asia,all,46,3
+ecology_e080912b0d7ab24f1ee0,ecology,ecological_suitability,0.15,0.35,False,False,False,-0.19999999999999998,0.19999999999999998,Africa,lake,86,8
+engineering_a3c9826061d867e13938,engineering,maintenance_ease,0.65,0.6,False,False,False,0.050000000000000044,0.050000000000000044,Europe,reservoir,124,12
+engineering_5e84cf44e7b3b11c12bf,engineering,maintenance_ease,0.65,0.5,False,False,False,0.15000000000000002,0.15000000000000002,Europe,lake,105,10
+ecology_2edb0e6ae43b59dec095,ecology,ecological_suitability,0.2,0.3,False,False,False,-0.09999999999999998,0.09999999999999998,South America,lake,90,8
+ecology_d52efb916f5dbf08d4f2,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Asia,lake,188,17
+province_0291ec7f022f726be8cd,province,implementation_offset,0.03,,True,False,True,,,Europe,all,638,63
+ecology_b3622e619ff64914a253,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Oceania,lake,60,6
+engineering_8e29030dd2514459affd,engineering,maintenance_ease,0.7,0.6,False,False,False,0.09999999999999998,0.09999999999999998,Europe,lake,105,10
+province_2e54a24e6d8e237d8a0e,province,implementation_offset,-0.05,,True,False,True,,,Africa,all,447,45
+province_2a62ec58a32a35c28a39,province,implementation_offset,0.03,,True,False,True,,,Africa,all,447,45
+engineering_840056a25031e3afe368,engineering,maintenance_ease,0.7,0.65,False,False,False,0.04999999999999993,0.04999999999999993,Europe,reservoir,124,12
+engineering_9730bfde22525b86d793,engineering,maintenance_ease,0.68,0.65,False,False,False,0.030000000000000027,0.030000000000000027,North America,reservoir,67,7
+province_486f2def37d51aae3e42,province,implementation_offset,-0.05,,True,False,True,,,Asia,all,701,69
+province_12e9930bbff12b2dfa09,province,implementation_offset,0.05,,True,False,True,,,South America,all,215,22
+province_4226e048f1721d339a09,province,implementation_offset,0.04,,True,False,True,,,Europe,all,638,63
+province_1b053b74126c7961b584,province,implementation_offset,-0.06,-0.03,False,False,False,-0.03,0.03,North America,all,253,26
+ecology_e375877b3abbde3ad6bb,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+ecology_5d512ee0923dea2bd782,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,North America,lake,154,14
+province_25e536c41fb9b60c6178,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+engineering_3b28a8cc03047310ea14,engineering,maintenance_ease,0.68,0.5,False,False,False,0.18000000000000005,0.18000000000000005,Oceania,lake,29,4
+ecology_f058204d8689ba4190fd,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Asia,lake,188,17
+engineering_34eb7403ec5a78f90cbd,engineering,maintenance_ease,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Africa,lake,130,12
+ecology_d3aee3bd614ab03a04d3,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia+Europe,reservoir,4,1
+ecology_b1c46bc376c48058b39e,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,Asia,lake,188,17
+country_50849a3c049c6f5ffd6c,country,renewable_support,0.75,0.75,False,False,False,0.0,0.0,Africa+Europe+North America+Oceania,all,1,1
+country_50849a3c049c6f5ffd6c,country,finance_delivery,0.75,0.7,False,False,False,0.050000000000000044,0.050000000000000044,Africa+Europe+North America+Oceania,all,1,1
+ecology_281802702287833cb8a1,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+province_1da42576f71aa16fd9a9,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+ecology_f00f81dd4bf0b5d6ea0d,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,North America,reservoir,121,11
+ecology_ef935a8f387f4070f82e,ecology,ecological_suitability,0.1,0.35,False,False,False,-0.24999999999999997,0.24999999999999997,Asia,lake,188,17
+ecology_e1a693f55acb2fae809e,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+ecology_f6377a9bf3cde0788d2f,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Europe,reservoir,45,5
+ecology_48ca8b6789b2077701e3,ecology,ecological_suitability,0.2,0.4,False,False,False,-0.2,0.2,Asia+Europe,lake,20,3
+engineering_9457a4a20f477de5b58a,engineering,maintenance_ease,0.55,0.65,False,False,False,-0.09999999999999998,0.09999999999999998,Africa,reservoir,93,9
+ecology_ace56aef4a0f84f6b9a9,ecology,ecological_suitability,0.25,0.4,False,False,False,-0.15000000000000002,0.15000000000000002,North America,lake,154,14
+engineering_f4183aa198b5d283a59c,engineering,maintenance_ease,0.5,0.6,False,False,False,-0.09999999999999998,0.09999999999999998,Africa,lake,130,12
+ecology_2be15f4e9fe2d73f3714,ecology,ecological_suitability,0.6,0.5,False,False,False,0.09999999999999998,0.09999999999999998,Asia,reservoir,145,13
+province_3045d25ede8c631c85ba,province,implementation_offset,0.03,,True,False,True,,,South America,all,215,22
+engineering_84f2a34e92e8b7f97fec,engineering,maintenance_ease,0.7,0.6,False,False,False,0.09999999999999998,0.09999999999999998,Europe,lake,105,10
+province_4af4e11144b9e39f0208,province,implementation_offset,0.03,,True,False,True,,,Europe,all,638,63
+province_4b2c9520194634795a31,province,implementation_offset,-0.02,,True,False,True,,,Asia,all,701,69
+province_4ba12f3ba95d3a9ab4bf,province,implementation_offset,0.05,0.04,False,False,False,0.010000000000000002,0.010000000000000002,Africa,all,447,45
+province_50fc061e200408545949,province,implementation_offset,0.04,,True,False,True,,,Africa,all,447,45
+province_530f27b6c39413e0928a,province,implementation_offset,0.05,0.04,False,False,False,0.010000000000000002,0.010000000000000002,Europe,all,638,63
+province_54ab66ac42efe92a6b3d,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+province_56ad1956804059317998,province,implementation_offset,-0.05,0.03,False,False,False,-0.08,0.08,Asia,all,701,69
+province_5add81ff0e7692cef65e,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+province_5c0d27cc78ed689aebe0,province,implementation_offset,-0.06,-0.05,False,False,False,-0.009999999999999995,0.009999999999999995,Africa,all,447,45
+province_5d1a4bcabd4ba7d1077c,province,implementation_offset,0.04,,True,False,True,,,South America,all,215,22
+province_5e7acc403a2945e2ea19,province,implementation_offset,0.03,,True,False,True,,,Europe,all,638,63
+province_5fd56e2839db5c9d5922,province,implementation_offset,0.03,,True,False,True,,,Europe,all,638,63
+province_60530981ad4d6c1b7278,province,implementation_offset,-0.05,,True,False,True,,,Africa,all,447,45
+province_60d2f0a9f1ef8960f1f7,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+province_6135c864b99da59c5fab,province,implementation_offset,-0.05,-0.04,False,False,False,-0.010000000000000002,0.010000000000000002,North America,all,253,26
+province_61c3b52b592669e60fd6,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+province_61c443ba1bf15a0797ef,province,implementation_offset,-0.08,,True,False,True,,,North America,all,253,26
+province_65a913ff2a9a6f12dd41,province,implementation_offset,-0.07,,True,False,True,,,South America,all,215,22
+province_669243dc1a1265724676,province,implementation_offset,-0.04,,True,False,True,,,North America,all,253,26
+province_687e3a13164e31e06586,province,implementation_offset,0.05,,True,False,True,,,South America,all,215,22
+province_68879e8fc9498e849d6e,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_69871537f1c2a311ff1c,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_6b7f26765a086d0001dd,province,implementation_offset,-0.05,0.03,False,False,False,-0.08,0.08,Asia,all,701,69
+province_6c05e60720d7f76e92d2,province,implementation_offset,-0.06,-0.05,False,False,False,-0.009999999999999995,0.009999999999999995,North America,all,253,26
+province_6e6ff290b728124ef95b,province,implementation_offset,,,True,True,False,,,Europe,all,638,63
+province_6ec01ca71d46ce8d57c2,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_703b64c8c66f3301b04b,province,implementation_offset,0.03,0.04,False,False,False,-0.010000000000000002,0.010000000000000002,South America,all,215,22
+province_707fe38442e18524b94e,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,Europe,all,638,63
+province_720f96a2a23877e83bd5,province,implementation_offset,-0.05,-0.04,False,False,False,-0.010000000000000002,0.010000000000000002,North America,all,253,26
+province_72d6fc0165c6e2c0d1f6,province,implementation_offset,,,True,True,False,,,Europe,all,638,63
+province_75a1bf44dacd8273a780,province,implementation_offset,-0.04,,True,False,True,,,Europe,all,638,63
+province_768b3695e613f92fab79,province,implementation_offset,-0.05,,True,False,True,,,Asia,all,701,69
+province_769a0090bd612962c4dc,province,implementation_offset,0.07,0.08,False,False,False,-0.009999999999999995,0.009999999999999995,Asia,all,701,69
+province_78007255d953e1c00014,province,implementation_offset,-0.05,,True,False,True,,,South America,all,215,22
+province_796e0193c46e5f76699e,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+province_7a66e5537a529fbc8616,province,implementation_offset,0.05,,True,False,True,,,Africa,all,447,45
+province_7b6f3aa6b2adaa3e76d5,province,implementation_offset,-0.05,,True,False,True,,,North America,all,253,26
+province_7d7658c8eac6da28d26f,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_7da18eda36a73cc48dca,province,implementation_offset,0.02,,True,False,True,,,North America,all,253,26
+province_7de771f1d7b4776cae20,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_7e42e9e20b80ab719156,province,implementation_offset,-0.05,-0.04,False,False,False,-0.010000000000000002,0.010000000000000002,Asia,all,701,69
+province_7ec79ce90bc89fb1f5f5,province,implementation_offset,0.04,,True,False,True,,,South America,all,215,22
+province_7f96bede41e67a645537,province,implementation_offset,0.02,,True,False,True,,,South America,all,215,22
+province_8124b259b9e4612792d1,province,implementation_offset,-0.03,,True,False,True,,,Africa,all,447,45
+province_82e554d26b62f396d308,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+province_830f15ec983a80859e43,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_8460871f25c6cd1a6e38,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,Europe,all,638,63
+province_847d0bfe6a5244d8fee6,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_84dbeb0bd7e762a76aa5,province,implementation_offset,0.04,0.07,False,False,False,-0.030000000000000006,0.030000000000000006,North America,all,253,26
+province_859b3b2e0760c8dddb40,province,implementation_offset,0.04,,True,False,True,,,Africa,all,447,45
+province_85dd2ae3f02cfac25d37,province,implementation_offset,-0.07,,True,False,True,,,South America,all,215,22
+province_87551517754f4abf2f21,province,implementation_offset,0.07,0.05,False,False,False,0.020000000000000004,0.020000000000000004,South America,all,215,22
+province_88d5ef4e4171ea366e38,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+province_89fd4f42aaf92216aed1,province,implementation_offset,-0.13,-0.1072,False,False,False,-0.0228,0.0228,Europe,all,638,63
+province_8a3a2f2dc3af16a77483,province,implementation_offset,,,True,True,False,,,Europe,all,638,63
+province_8aacd03b9bd1d90b834f,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_8b34a6ad882d02327d12,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+province_8c6b1921198f8695e8ab,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,Europe,all,638,63
+province_8cb23e36eac8f42371a2,province,implementation_offset,-0.03,,True,False,True,,,Europe,all,638,63
+province_8dd2aedad03b9c0a5720,province,implementation_offset,-0.02,,True,False,True,,,Asia,all,701,69
+province_8fb503ce3d029d9d3bed,province,implementation_offset,0.03,,True,False,True,,,Europe,all,638,63
+province_901bfe6de99cdd8ad63d,province,implementation_offset,-0.08,,True,False,True,,,North America,all,253,26
+province_907fcded7e99ffc05c7c,province,implementation_offset,-0.03,,True,False,True,,,Africa,all,447,45
+province_95108110d7017e4861d1,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_979834b6abf7deaa9885,province,implementation_offset,0.03,,True,False,True,,,Asia,all,701,69
+province_9896d458aa2f9393c828,province,implementation_offset,-0.05,,True,False,True,,,Asia,all,701,69
+province_a1d6b1ebdc0bfb10143a,province,implementation_offset,0.03,,True,False,True,,,Africa,all,447,45
+province_a2fde1314f30380bbdd7,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,Europe,all,638,63
+province_a32749cf6913310ef212,province,implementation_offset,0.05,,True,False,True,,,Africa,all,447,45
+province_a3c6552cb28cebc6179e,province,implementation_offset,0.04,,True,False,True,,,Asia,all,701,69
+province_a3c87b9e723413b2dab8,province,implementation_offset,-0.03,,True,False,True,,,Europe,all,638,63
+province_a56506faa9ff0a57cc59,province,implementation_offset,-0.04,0.04,False,False,False,-0.08,0.08,Asia,all,701,69
+province_a5d84b382c65f7229737,province,implementation_offset,0.03,,True,False,True,,,Asia,all,701,69
+province_a8700579743e560347a8,province,implementation_offset,0.02,,True,False,True,,,Asia,all,701,69
+province_a8722e0f94d59ebd2e34,province,implementation_offset,-0.03,,True,False,True,,,Africa,all,447,45
+province_a8b76ab0d46a8d8ee339,province,implementation_offset,0.02,,True,False,True,,,Asia,all,701,69
+province_a9f9612b5111ca78fe4c,province,implementation_offset,0.04,,True,False,True,,,Europe,all,638,63
+province_ab0bc645bf7a3a12b2c0,province,implementation_offset,-0.05,,True,False,True,,,Asia,all,701,69
+province_ab1cca31be51552696b0,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+province_ab5ebb806c2ff26d95f9,province,implementation_offset,-0.08,,True,False,True,,,Oceania,all,59,7
+province_acdf7e5ba2fc2e8d3212,province,implementation_offset,0.02,,True,False,True,,,Asia,all,701,69
+province_ad18d8f97d939b883434,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,Europe,all,638,63
+province_ad5720bd35e7a9c1ce40,province,implementation_offset,-0.04,,True,False,True,,,South America,all,215,22
+province_ad9b712f0da27f3a413c,province,implementation_offset,-0.07,,True,False,True,,,Africa,all,447,45
+province_adf7d8ded7a63eaf38a9,province,implementation_offset,-0.05,,True,False,True,,,North America,all,253,26
+province_ae7490f9f63d6664aad7,province,implementation_offset,0.0,,True,False,True,,,Asia,all,701,69
+province_aef3c6517f867c4706bf,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+province_af09cd4c55c78eb86fcf,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+province_afb8b769204bbe1db593,province,implementation_offset,-0.05,,True,False,True,,,North America,all,253,26
+province_b37e367e67164c34509f,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+province_b60214c1eb9f7a86ec02,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_b63b2cc9513101b5fd46,province,implementation_offset,0.02,,True,False,True,,,Africa,all,447,45
+province_b67967f8cc1ec537c432,province,implementation_offset,-0.07,,True,False,True,,,Africa,all,447,45
+province_b901fcc86e1c843ccb40,province,implementation_offset,0.05,0.04,False,False,False,0.010000000000000002,0.010000000000000002,Asia,all,701,69
+province_b91db684ada66ba80a28,province,implementation_offset,-0.05,,True,False,True,,,Africa,all,447,45
+province_b97246463687a8fc2c47,province,implementation_offset,-0.04,,True,False,True,,,South America,all,215,22
+province_b98080bc06c3b9d764c6,province,implementation_offset,0.03,,True,False,True,,,Asia,all,701,69
+province_ba71cd3420949477edbb,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_bc2bfd6b9c4d5d01304d,province,implementation_offset,0.03,,True,False,True,,,Europe,all,638,63
+province_c0363bfda13cdcea7ec6,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_c21178cf13e298f9d614,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_c37078b2f830ba1c7628,province,implementation_offset,0.07,,True,False,True,,,Africa,all,447,45
+province_c61e3e1e0807f30398a0,province,implementation_offset,0.03,,True,False,True,,,Africa,all,447,45
+province_c85e41dc39d3060b884b,province,implementation_offset,-0.04,,True,False,True,,,Oceania,all,59,7
+province_c87a437e1755b4eaa331,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+province_c8e10ecf1f3833f8ae2a,province,implementation_offset,0.04,,True,False,True,,,Africa,all,447,45
+province_c94e9c725dfa5957563a,province,implementation_offset,0.02,,True,False,True,,,Asia,all,701,69
+province_ca0bd01054bcca2718f8,province,implementation_offset,-0.08,,True,False,True,,,Africa,all,447,45
+province_caed9dba439a4cfd75e1,province,implementation_offset,0.04,0.03,False,False,False,0.010000000000000002,0.010000000000000002,Asia,all,701,69
+province_cb401341562040d20edb,province,implementation_offset,0.05,,True,False,True,,,Asia,all,701,69
+province_cc10bb9040dc5dddd30f,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_cc7f0742466f86b9b072,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_cd6f9971f148f1909e29,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_cefd5d12013cf4a23a52,province,implementation_offset,0.04,,True,False,True,,,Africa,all,447,45
+province_cf3e34556993366ec18a,province,implementation_offset,-0.07,,True,False,True,,,Europe,all,638,63
+province_d2105a98f5817b88baa4,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_d24a897d4bcc75d17295,province,implementation_offset,,,True,True,False,,,Africa,all,447,45
+province_d290de0348f50ef70649,province,implementation_offset,-0.06,,True,False,True,,,South America,all,215,22
+province_d48c0f41d35fe106c9c7,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_d5e7138a27b670a48326,province,implementation_offset,0.05,,True,False,True,,,Asia,all,701,69
+province_d6590fca65493a16c0cc,province,implementation_offset,0.02,,True,False,True,,,Asia,all,701,69
+province_d800823151ccea0379c0,province,implementation_offset,-0.06,-0.05,False,False,False,-0.009999999999999995,0.009999999999999995,Asia,all,701,69
+province_da4a5ef6f2c380c0928a,province,implementation_offset,-0.03,,True,False,True,,,Asia,all,701,69
+province_dad9f1f755165a7bcd50,province,implementation_offset,-0.05,,True,False,True,,,Europe,all,638,63
+province_dbbd23b47a5838594f1d,province,implementation_offset,0.04,,True,False,True,,,Europe,all,638,63
+province_dbc2e055df9f169a85f6,province,implementation_offset,-0.02,,True,False,True,,,Africa,all,447,45
+province_dd05a7315787fc48f355,province,implementation_offset,-0.03,,True,False,True,,,Europe,all,638,63
+province_dd4916d9ced696f2cada,province,implementation_offset,0.02,,True,False,True,,,Europe,all,638,63
+province_df3365ad27041170e028,province,implementation_offset,-0.08,,True,False,True,,,Africa,all,447,45
+province_dfc5ac9fea3d82d82f21,province,implementation_offset,0.03,0.03,False,False,False,0.0,0.0,Europe,all,638,63
+province_e0f4f530ce7fd7806dfc,province,implementation_offset,0.05,0.05,False,False,False,0.0,0.0,Asia,all,701,69
+province_e1f69be9c4634f622568,province,implementation_offset,0.04,,True,False,True,,,South America,all,215,22
+province_e2122449ff4d1a82595a,province,implementation_offset,-0.04,,True,False,True,,,Africa,all,447,45
+province_e2b31120dc3d14776e1a,province,implementation_offset,-0.04,,True,False,True,,,Europe,all,638,63
+province_e46a7b8dedf136d52497,province,implementation_offset,0.06,,True,False,True,,,Asia,all,701,69
+province_e55ff92b58f8ab12d535,province,implementation_offset,-0.07,,True,False,True,,,Asia,all,701,69
+province_ebb2063be352e4e7c32c,province,implementation_offset,,,True,True,False,,,Africa,all,447,45
+province_ed8cbcb2afe2d1eb12da,province,implementation_offset,0.05,,True,False,True,,,Europe,all,638,63
+province_ef6322daae8fe3572f94,province,implementation_offset,-0.04,,True,False,True,,,Europe,all,638,63
+province_f0fc6103c59f9d23fb61,province,implementation_offset,0.04,,True,False,True,,,Europe,all,638,63
+province_f15a416124ed4d320977,province,implementation_offset,0.05,,True,False,True,,,Oceania,all,59,7
+province_f1e7ed12562ae874aacf,province,implementation_offset,-0.1,-0.118,False,False,False,0.017999999999999988,0.017999999999999988,Africa,all,447,45
+province_f3249b1ab2917e5babbe,province,implementation_offset,0.03,,True,False,True,,,North America,all,253,26
+province_f4c0cf5887c71f571bb7,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_f5f5c6edcaf5f032ab1d,province,implementation_offset,-0.04,,True,False,True,,,Asia,all,701,69
+province_faa0afda4ef2b21bb4de,province,implementation_offset,-0.06,,True,False,True,,,Oceania,all,59,7
+province_fcbb4c6c2b832abeff44,province,implementation_offset,0.03,-0.05,False,False,False,0.08,0.08,Africa,all,447,45
+province_fccc2f99c194773b21da,province,implementation_offset,-0.05,,True,False,True,,,Africa,all,447,45
+province_fd0227d293dbe1f0c54a,province,implementation_offset,-0.03,,True,False,True,,,Africa,all,447,45
+province_fd9928260e3529ccc5b1,province,implementation_offset,0.02,,True,False,True,,,Africa,all,447,45
+province_ffe34e7b8e16ba129c39,province,implementation_offset,-0.05,-0.03,False,False,False,-0.020000000000000004,0.020000000000000004,North America,all,253,26

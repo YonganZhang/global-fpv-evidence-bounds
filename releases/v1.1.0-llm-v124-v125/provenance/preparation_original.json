@@ -1,0 +1,41 @@
+{
+  "all_checks_passed": true,
+  "artifact_hashes": {
+    "entities.json": "b1908159b97a92159d3163cb9611e1a9cdb02d9e79ac0ae2ae82cdc361374e62",
+    "waterbody_entity_map.csv": "89cb5aec7667a58ee7ef5d0b0d743dbce0a1552f069ce2b83b01e7b5d18f560f"
+  },
+  "assessment_date": "2026-09-08",
+  "checks": {
+    "all_pilot_entities_exactly_reusable": true,
+    "full_inventory_membership": true,
+    "identities_reconstruct": true,
+    "no_incomplete_context_in_prompts": true,
+    "unique_entities": true
+  },
+  "dimension_entities": {
+    "country": 179,
+    "ecology": 1127,
+    "engineering": 1082,
+    "province": 2313
+  },
+  "entities": 4701,
+  "future_rule": "Contemporary institutional snapshot held fixed; future physical gates and costs must be rebuilt, not multiplied onto v123.",
+  "global_result": false,
+  "missing_context_waterbodies": {
+    "country": 0,
+    "ecology": 2845,
+    "engineering": 2071,
+    "province": 2324
+  },
+  "required_predictions": 18804,
+  "scientific_accuracy_validated": false,
+  "selection": "All inventory IDs, including currently excluded sites; no current L2/L3 gate used.",
+  "source_hashes": {
+    "Dataset/data_processed/merged/waterbody_tags_enriched.csv": "d55041bbec4b30d6076484780e2b5ec99ac22e30940c63e8690295fc929e6ad9",
+    "_outputs/v117/data/fpv_reference_inventory_v117.parquet": "4addb38ab5766248c7fa0b65cd585c91a47b3037cf5cc2114684f6a4b5f9c96a",
+    "src/analysis/fpv_llm_v124.py": "64c44e49e416035602c97cc94f30e7d2a345e02a2482edf812766b56a1308d2c",
+    "src/analysis/prepare_global_scores_v124.py": "8790d644787b532d48a10d47e534e4bbb9b4053b8813819498e5f4608f5819fa"
+  },
+  "status": "global_contexts_frozen_not_scored",
+  "waterbodies": 199976
+}

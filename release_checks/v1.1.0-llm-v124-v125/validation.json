@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": 36370,
+  "accepted_primary": 4701,
+  "accepted_comparison": 471,
+  "rejected_attempts": 18,
+  "max_attempts": 3,
+  "hashes_checked": 71,
+  "no_internal_reasoning_exported": true,
+  "no_new_model_calls": true,
+  "limits": "Credential format scan plus exact field allowlists is not independent scientific validation or a legal opinion."
+}

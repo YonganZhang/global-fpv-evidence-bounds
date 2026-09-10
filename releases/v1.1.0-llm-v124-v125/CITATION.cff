@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite this versioned experiment archive and the associated manuscript when using these materials."
+title: "Global FPV: actual LLM experiment archive and v124/v125 numerical reconstruction"
+type: software
+version: "v1.1.0-llm-v124-v125"
+date-released: 2026-09-11
+repository-code: "https://github.com/YonganZhang/global-fpv-evidence-bounds"
+license: MIT
+authors:
+  - family-names: Zhang
+    given-names: Yongan
+  - family-names: Jiang
+    given-names: Yujie
+  - family-names: Guo
+    given-names: Zhiling
+  - family-names: Chen
+    given-names: Yuntian
+  - family-names: Yan
+    given-names: Jinyue

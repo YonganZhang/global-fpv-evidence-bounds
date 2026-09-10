@@ -1,0 +1,8 @@
+Output maintenance_ease in [0,1]: residual ease of operation and
+maintenance of freshwater floating-PV equipment under this regional climate context,
+limited to corrosion/humidity and biological fouling/cleaning requirements. This is
+NOT a dollar estimate. Do not rescore PV yield, temperature efficiency, ice eligibility,
+depth/anchoring, waves, flooding, road or grid distance, policy or ecology. Water salinity
+and local water chemistry are unknown: do not invent them. State uncertainty.
+Context: {{context_json}}
+Required structure: {"maintenance_ease": {"score": null, "confidence": "unknown", "reason": "Explain the judgment and uncertainty."}}

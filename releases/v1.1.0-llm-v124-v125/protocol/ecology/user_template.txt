@@ -1,0 +1,9 @@
+Output ecological_suitability in [0,1]: residual ecological compatibility
+of limited floating-PV coverage for this waterbody type/ecoregional context, considering
+light-dependent freshwater habitat and aquatic ecosystem sensitivity. Terrestrial
+ecoregion/biome is a coarse contextual proxy, NOT a freshwater ecological survey.
+Do not infer protected status, local water uses, population, evaporative benefit,
+climate/ice or engineering costs. Natural lakes and reservoirs must be distinguished.
+State the important missing freshwater information in the reason.
+Context: {{context_json}}
+Required structure: {"ecological_suitability": {"score": null, "confidence": "unknown", "reason": "Explain the judgment and uncertainty."}}

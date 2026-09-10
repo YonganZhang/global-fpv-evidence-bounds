@@ -1,0 +1,62 @@
+id: fpv-global-lean-v124
+pipeline: fpv-global-lean-v124
+desc: "作者批准的4701主评分+471分层抽查；全量齐备后再运行现状/未来三级潜力与效益。"
+domain: research
+status: active
+entry_role: main
+steps:
+  - id: plan
+    ref: code:fpv_lean_plan_v124
+    success:
+      outputs_exist: [_outputs/v124/global/lean/plan.json]
+    assertions:
+      - signal: _outputs/v124/global/lean/plan.json
+        predicate: "primary_count == 4701; audit_count == 471; expected_predictions == 5172"
+  - id: predictions
+    ref: code:fpv_recovery_launcher_v124
+    after: [plan]
+    success:
+      outputs_exist: [_outputs/v124/global/lean/recovery/recovery01/supervisor_status.json]
+    assertions:
+      - signal: _outputs/v124/global/lean/recovery/recovery01/supervisor_status.json
+        predicate: "state == predictions_complete_pending_evaluation; prediction_barrier_closed == true; primary_successful == 4701; audit_successful == 471; failed_predictions == 0; immutable recovery receipt validation passed"
+  - id: levels
+    ref: code:fpv_lean_consumers_v124
+    after: [predictions]
+    params: {command: levels, run_id: primaryrecovery01, receipt: required_final_immutable_receipt}
+    success:
+      outputs_exist: [_outputs/v124/global/lean/weighted_levels/primaryrecovery01/validation.json]
+    assertions:
+      - signal: _outputs/v124/global/lean/weighted_levels/primaryrecovery01/validation.json
+        predicate: "all_numerical_checks_passed == true; numerical_levels_complete == true; physical_partitions == 46; primary_arm == codex_primary"
+  - id: future
+    ref: code:fpv_lean_consumers_v124
+    after: [levels]
+    params: {command: future, run_id: primaryrecovery01}
+    success:
+      outputs_exist: [_outputs/v124/global/lean/weighted_levels/primaryrecovery01/future_changes/validation.json]
+    assertions:
+      - signal: _outputs/v124/global/lean/weighted_levels/primaryrecovery01/future_changes/validation.json
+        predicate: "all_checks_passed == true; future_changes_complete == true; paired_partitions == 36"
+  - id: benefits
+    ref: code:fpv_lean_consumers_v124
+    after: [levels]
+    params: {command: benefits, run_id: primaryrecovery01}
+    success:
+      outputs_exist: [_outputs/v124/global/lean/weighted_levels/primaryrecovery01/present_benefits/validation.json]
+    assertions:
+      - signal: _outputs/v124/global/lean/weighted_levels/primaryrecovery01/present_benefits/validation.json
+        predicate: "all_checks_passed == true; present_benefits_complete == true; scenario_totals == 8"
+anti_fake_completion:
+  - "作者批准超时补充合同：仅两次无回答timeout允许第三次，耗尽隔离不放宽5172完整门；继承lean01原件不修改。recovery-to-results启动器遇非零退出不做下游计算。"
+  - "连续器仅把已有并发批次接起来；运行上限退出码3不是完成，错误或重试耗尽仍停。监督状态见supervisor_status.json，完整科学结果仍以最终回执为准。"
+  - "并发上限8不等于每时刻8任务，不承诺线性加速；先4后8真实运行验证。新入口还须检查调度合同与切换后回执，旧两路入口不再作为续跑命令。"
+  - "Claude只作抽查，不参与主评分平均或null回填。"
+  - "结构注册、源码测试与四例联算都不等于全量输出；不得提前替换论文数值。"
+  - "旧18804协议保留为历史，不假称完成；新分母固定5172且成员必须完全匹配。"
+  - "最终receipt需运行时明确传入；此处占位不是可执行的完整产物。"
+verified_steps_hash: 1e3e59e9ce39dcd5d62b3a1076b10c6e89cad3c196ba989de13b38be996371d1
+verified_at_commit: 0507f392425f0a5828bfb029ac539ddc47bcc75a
+
+lifecycle: current_completed_scientific_run
+default_execution: false

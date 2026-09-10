@@ -1,0 +1,4 @@
+# Python 3.10 SDK worker environment; CLI runtime versions are frozen per run.
+# Numerical preparation/evaluation remains in .venv-future.
+openai-codex==0.147.0
+claude-agent-sdk==0.2.152

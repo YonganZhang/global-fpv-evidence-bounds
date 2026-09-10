@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "waterbodies": 199976,
+  "primary_entities": 4701,
+  "comparison_entities": 471,
+  "comparison_fields": 489,
+  "score_table_matches_frozen_reference": true,
+  "example": {
+    "wb_id": 1788,
+    "scores": {
+      "ecological_suitability": 0.5,
+      "maintenance_ease": 0.4,
+      "renewable_support": 0.85,
+      "finance_delivery": 0.75,
+      "implementation_offset": 0.06
+    },
+    "mapping": {
+      "ecological_area_fraction": 0.75,
+      "development_area_fraction": 0.93,
+      "engineering_cost_factor": 1.0527802994546336,
+      "maintenance_cost_factor": 1.3
+    },
+    "interpretation": "Weights and O&M multiplier only; physical inputs and site L1/L2/L3 not claimed."
+  },
+  "future_ssp585_late_century_pct": {
+    "L1": [
+      -3.548831793765255,
+      -2.409660081266739
+    ],
+    "L2": [
+      22.010774393328507,
+      62.39051979380048
+    ],
+    "L3": [
+      2.487612461437731,
+      7.286949265126121
+    ]
+  },
+  "model_calls": 0,
+  "scope": "Exact final-answer to score mapping; weights and paper ratios rebuilt from frozen aggregate outputs. This does NOT rerun the restricted-data physical/geospatial pipeline."
+}

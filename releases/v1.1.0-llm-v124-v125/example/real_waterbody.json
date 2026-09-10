@@ -1,0 +1,625 @@
+{
+  "wb_id": 1788,
+  "selection": "First internal waterbody ID in China with five numerical primary scores; demonstrates wiring, not representative site feasibility.",
+  "entity_ids": {
+    "ecology": "ecology_6819f521c600c2d664ad",
+    "engineering": "engineering_b1de133d2e356888f19d",
+    "country": "country_4ccdd12eb9c60545e7bf",
+    "province": "province_f1403a3ed820950d0731"
+  },
+  "scores": {
+    "ecological_suitability": 0.5,
+    "maintenance_ease": 0.4,
+    "renewable_support": 0.85,
+    "finance_delivery": 0.75,
+    "implementation_offset": 0.06
+  },
+  "records": {
+    "ecology": {
+      "signature": "739428764231ca85da221ec7f702b445a604384dc9a5dce7d43fcae4df6f5a87",
+      "entity_id": "ecology_6819f521c600c2d664ad",
+      "dimension": "ecology",
+      "context": {
+        "waterbody_type": "reservoir",
+        "terrestrial_ecoregion": "Jian Nan subtropical evergreen forests",
+        "biome": "Tropical & Subtropical Moist Broadleaf Forests"
+      },
+      "provider": "codex",
+      "requested_model": "gpt-6-astra",
+      "repeat": 0,
+      "job": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "policy": "You assess uncertain regional conditions for a scientific floating-PV scenario.\nUse your pretrained knowledge directly; do not browse, invent citations, or claim to have\nread a policy or visited a site. No particular country is assigned a target score.\nProvide judgments, not observed facts or calibrated deployment probabilities. Return\nonly a JSON object with exactly the requested fields. Each field contains score,\nconfidence (low/medium/high/unknown), and a concise reason (maximum 60 words).\nIf you cannot make even a regional judgment, use score:null and confidence:unknown.\nDo not manufacture site-specific species, permits, costs, dates or infrastructure.\nThe physical pipeline already handles irradiation, temperature, ice duration,\nprotected-area membership, historical drying, depth, roads, grid distance and\npopulation proximity. Do NOT rescore those measured quantities or hard exclusions.\nOnly assess the residual factor specified below. Distinguish assumptions from knowledge.\nFor scores on [0,1], 0 means strongly adverse, .25 adverse, .5 mixed, .75 favorable,\n1 strongly favorable for the specified residual factor, NOT feasible area percentages.\nYour scores will be transformed by researcher-declared scenario mappings, not treated\nas empirical observations. A reservoir is not automatically ecologically harmless.\n",
+        "prompt": "Output ecological_suitability in [0,1]: residual ecological compatibility\nof limited floating-PV coverage for this waterbody type/ecoregional context, considering\nlight-dependent freshwater habitat and aquatic ecosystem sensitivity. Terrestrial\necoregion/biome is a coarse contextual proxy, NOT a freshwater ecological survey.\nDo not infer protected status, local water uses, population, evaporative benefit,\nclimate/ice or engineering costs. Natural lakes and reservoirs must be distinguished.\nState the important missing freshwater information in the reason.\nContext: {\"waterbody_type\": \"reservoir\", \"terrestrial_ecoregion\": \"Jian Nan subtropical evergreen forests\", \"biome\": \"Tropical & Subtropical Moist Broadleaf Forests\"}\nRequired structure: {\"ecological_suitability\": {\"score\": null, \"confidence\": \"unknown\", \"reason\": \"Explain the judgment and uncertainty.\"}}",
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ecological_suitability"
+          ],
+          "properties": {
+            "ecological_suitability": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "score",
+                "confidence",
+                "reason"
+              ],
+              "properties": {
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0.0,
+                  "maximum": 1.0
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high",
+                    "unknown"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "environment": {
+        "claude_runtime": "2.1.263 (Claude Code)",
+        "codex_runtime": "codex-cli 0.153.4",
+        "contract_sha256": "64c44e49e416035602c97cc94f30e7d2a345e02a2482edf812766b56a1308d2c",
+        "entities_sha256": "b1908159b97a92159d3163cb9611e1a9cdb02d9e79ac0ae2ae82cdc361374e62",
+        "lean_plan_sha256": "b07ca81e6e96e12fc6dcb4e525fc8237668231fec4eabc8a0c1c9e3426fde45f",
+        "lean_runner_sha256": "db23630f5096068466ae6f036c20e47310a31e72a956074cedb890aa2283e1dd",
+        "prompt_source_sha256": "431ca47ed8f28f779f00347b1cbb02a3eeed3af9547e6bfae9ea8e438033192f",
+        "runner_sha256": "4baf60aca5353bb452c373bf061c1db36dc7024a3c3c785f42662e594eda1bfe",
+        "scheduler_sha256": "b7ece0f098b6c57a91061daff08f0b31329a2f61989b5722143ab2f6be16da33",
+        "sdk_versions": {
+          "claude-agent-sdk": "0.2.152",
+          "openai-codex": "0.147.0"
+        },
+        "worker_sha256": "6068ab263013747f2ce546e61a94e49e9ab1f623f0ccab5459a3716509dcafa7"
+      },
+      "response": {
+        "provider": "codex_subscription",
+        "sdk_version": "0.147.0",
+        "model": "gpt-6-astra",
+        "requested_model": "gpt-6-astra",
+        "resolved_model": null,
+        "model_id_source": "requested_configuration_not_independently_observed",
+        "effort": "high",
+        "final_response": "{\"ecological_suitability\":{\"score\":0.5,\"confidence\":\"low\",\"reason\":\"Limited coverage suggests mixed compatibility: reservoirs are modified systems, not ecologically harmless substitutes for natural lakes. Shading could affect light-dependent habitats and aquatic food webs. The Jian Nan terrestrial ecoregion provides only coarse context; freshwater species, submerged vegetation, nutrient and oxygen conditions, and array placement relative to sensitive habitats are unknown.\"}}",
+        "active_tool_items": [],
+        "turns": 1,
+        "turn_count_source": "one_sdk_run_requested",
+        "usage": {
+          "last": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 9216,
+            "input_tokens": 11733,
+            "output_tokens": 181,
+            "reasoning_output_tokens": 83,
+            "total_tokens": 11914
+          },
+          "model_context_window": 258400,
+          "total": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 9216,
+            "input_tokens": 11733,
+            "output_tokens": 181,
+            "reasoning_output_tokens": 83,
+            "total_tokens": 11914
+          }
+        },
+        "tools_exposed_empty_verified": false,
+        "settings": {
+          "sandbox": "read-only",
+          "approval": "deny-all",
+          "overrides": [
+            "forced_login_method=\"chatgpt\"",
+            "web_search=\"disabled\"",
+            "mcp_servers.codegraph.enabled=false",
+            "mcp_servers.openaiDeveloperDocs.enabled=false",
+            "features.plugins=false",
+            "features.apps=false",
+            "features.hooks=false"
+          ]
+        },
+        "status": "ok",
+        "worker_exit_code": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "status": "ok",
+      "generated_at": "2026-09-09T04:08:02.319973+00:00",
+      "source_mode": "direct_pretrained_judgment_no_retrieval",
+      "prompt_version": "fpv-separated-direct-v124-01",
+      "adapter_version": "subscription-separated-v2",
+      "scores": {
+        "ecological_suitability": {
+          "score": 0.5,
+          "confidence": "low",
+          "reason": "Limited coverage suggests mixed compatibility: reservoirs are modified systems, not ecologically harmless substitutes for natural lakes. Shading could affect light-dependent habitats and aquatic food webs. The Jian Nan terrestrial ecoregion provides only coarse context; freshwater species, submerged vegetation, nutrient and oxygen conditions, and array placement relative to sensitive habitats are unknown."
+        }
+      },
+      "archive_role": "accepted",
+      "original_record_sha256": "c70c9d4a51b3cd645190483e015764dfa3555257236ddf1b388637cf2c57b622",
+      "original_record_path": "_outputs/v124/global/lean/runs/lean01/predictions/739428764231ca85da221ec7f702b445a604384dc9a5dce7d43fcae4df6f5a87.json",
+      "redacted_paths": [
+        "response.raw_events"
+      ]
+    },
+    "engineering": {
+      "signature": "b463c8bafb1d8d8fba74879d05fe5d6d0ca05e08a210337822cda9a16ad5d014",
+      "entity_id": "engineering_b1de133d2e356888f19d",
+      "dimension": "engineering",
+      "context": {
+        "waterbody_type": "reservoir",
+        "koppen_zone": "Cfa",
+        "country": "China"
+      },
+      "provider": "codex",
+      "requested_model": "gpt-6-astra",
+      "repeat": 0,
+      "job": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "policy": "You assess uncertain regional conditions for a scientific floating-PV scenario.\nUse your pretrained knowledge directly; do not browse, invent citations, or claim to have\nread a policy or visited a site. No particular country is assigned a target score.\nProvide judgments, not observed facts or calibrated deployment probabilities. Return\nonly a JSON object with exactly the requested fields. Each field contains score,\nconfidence (low/medium/high/unknown), and a concise reason (maximum 60 words).\nIf you cannot make even a regional judgment, use score:null and confidence:unknown.\nDo not manufacture site-specific species, permits, costs, dates or infrastructure.\nThe physical pipeline already handles irradiation, temperature, ice duration,\nprotected-area membership, historical drying, depth, roads, grid distance and\npopulation proximity. Do NOT rescore those measured quantities or hard exclusions.\nOnly assess the residual factor specified below. Distinguish assumptions from knowledge.\nFor scores on [0,1], 0 means strongly adverse, .25 adverse, .5 mixed, .75 favorable,\n1 strongly favorable for the specified residual factor, NOT feasible area percentages.\nYour scores will be transformed by researcher-declared scenario mappings, not treated\nas empirical observations. A reservoir is not automatically ecologically harmless.\n",
+        "prompt": "Output maintenance_ease in [0,1]: residual ease of operation and\nmaintenance of freshwater floating-PV equipment under this regional climate context,\nlimited to corrosion/humidity and biological fouling/cleaning requirements. This is\nNOT a dollar estimate. Do not rescore PV yield, temperature efficiency, ice eligibility,\ndepth/anchoring, waves, flooding, road or grid distance, policy or ecology. Water salinity\nand local water chemistry are unknown: do not invent them. State uncertainty.\nContext: {\"waterbody_type\": \"reservoir\", \"koppen_zone\": \"Cfa\", \"country\": \"China\"}\nRequired structure: {\"maintenance_ease\": {\"score\": null, \"confidence\": \"unknown\", \"reason\": \"Explain the judgment and uncertainty.\"}}",
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maintenance_ease"
+          ],
+          "properties": {
+            "maintenance_ease": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "score",
+                "confidence",
+                "reason"
+              ],
+              "properties": {
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0.0,
+                  "maximum": 1.0
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high",
+                    "unknown"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "environment": {
+        "claude_runtime": "2.1.263 (Claude Code)",
+        "codex_runtime": "codex-cli 0.153.4",
+        "contract_sha256": "64c44e49e416035602c97cc94f30e7d2a345e02a2482edf812766b56a1308d2c",
+        "entities_sha256": "b1908159b97a92159d3163cb9611e1a9cdb02d9e79ac0ae2ae82cdc361374e62",
+        "lean_plan_sha256": "b07ca81e6e96e12fc6dcb4e525fc8237668231fec4eabc8a0c1c9e3426fde45f",
+        "lean_runner_sha256": "db23630f5096068466ae6f036c20e47310a31e72a956074cedb890aa2283e1dd",
+        "prompt_source_sha256": "431ca47ed8f28f779f00347b1cbb02a3eeed3af9547e6bfae9ea8e438033192f",
+        "runner_sha256": "4baf60aca5353bb452c373bf061c1db36dc7024a3c3c785f42662e594eda1bfe",
+        "scheduler_sha256": "b7ece0f098b6c57a91061daff08f0b31329a2f61989b5722143ab2f6be16da33",
+        "sdk_versions": {
+          "claude-agent-sdk": "0.2.152",
+          "openai-codex": "0.147.0"
+        },
+        "worker_sha256": "6068ab263013747f2ce546e61a94e49e9ab1f623f0ccab5459a3716509dcafa7"
+      },
+      "response": {
+        "provider": "codex_subscription",
+        "sdk_version": "0.147.0",
+        "model": "gpt-6-astra",
+        "requested_model": "gpt-6-astra",
+        "resolved_model": null,
+        "model_id_source": "requested_configuration_not_independently_observed",
+        "effort": "high",
+        "final_response": "{\"maintenance_ease\":{\"score\":0.4,\"confidence\":\"medium\",\"reason\":\"China’s humid subtropical Cfa climate suggests persistent moisture exposure and potential biological fouling, increasing corrosion-control and cleaning requirements. This is a regional judgment, not a site observation. Salinity, water chemistry, actual fouling intensity, and equipment protection are unknown and could substantially change maintenance ease.\"}}",
+        "active_tool_items": [],
+        "turns": 1,
+        "turn_count_source": "one_sdk_run_requested",
+        "usage": {
+          "last": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 9088,
+            "input_tokens": 11707,
+            "output_tokens": 172,
+            "reasoning_output_tokens": 83,
+            "total_tokens": 11879
+          },
+          "model_context_window": 258400,
+          "total": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 9088,
+            "input_tokens": 11707,
+            "output_tokens": 172,
+            "reasoning_output_tokens": 83,
+            "total_tokens": 11879
+          }
+        },
+        "tools_exposed_empty_verified": false,
+        "settings": {
+          "sandbox": "read-only",
+          "approval": "deny-all",
+          "overrides": [
+            "forced_login_method=\"chatgpt\"",
+            "web_search=\"disabled\"",
+            "mcp_servers.codegraph.enabled=false",
+            "mcp_servers.openaiDeveloperDocs.enabled=false",
+            "features.plugins=false",
+            "features.apps=false",
+            "features.hooks=false"
+          ]
+        },
+        "status": "ok",
+        "worker_exit_code": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "status": "ok",
+      "generated_at": "2026-09-09T05:20:09.819067+00:00",
+      "source_mode": "direct_pretrained_judgment_no_retrieval",
+      "prompt_version": "fpv-separated-direct-v124-01",
+      "adapter_version": "subscription-separated-v2",
+      "scores": {
+        "maintenance_ease": {
+          "score": 0.4,
+          "confidence": "medium",
+          "reason": "China’s humid subtropical Cfa climate suggests persistent moisture exposure and potential biological fouling, increasing corrosion-control and cleaning requirements. This is a regional judgment, not a site observation. Salinity, water chemistry, actual fouling intensity, and equipment protection are unknown and could substantially change maintenance ease."
+        }
+      },
+      "archive_role": "accepted",
+      "original_record_sha256": "12c841c90649f70577065571483b3dd4a43ec1445bec62147373202f91c46c92",
+      "original_record_path": "_outputs/v124/global/lean/runs/lean01/predictions/b463c8bafb1d8d8fba74879d05fe5d6d0ca05e08a210337822cda9a16ad5d014.json",
+      "redacted_paths": [
+        "response.raw_events"
+      ]
+    },
+    "country": {
+      "signature": "1e045276494cfa343ddd88f48c3bb85cb1e491dfc4a7efe413ad6b0e0e32bae6",
+      "entity_id": "country_4ccdd12eb9c60545e7bf",
+      "dimension": "country",
+      "context": {
+        "country": "China",
+        "assessment_date": "2026-09-08"
+      },
+      "provider": "codex",
+      "requested_model": "gpt-6-astra",
+      "repeat": 0,
+      "job": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "policy": "You assess uncertain regional conditions for a scientific floating-PV scenario.\nUse your pretrained knowledge directly; do not browse, invent citations, or claim to have\nread a policy or visited a site. No particular country is assigned a target score.\nProvide judgments, not observed facts or calibrated deployment probabilities. Return\nonly a JSON object with exactly the requested fields. Each field contains score,\nconfidence (low/medium/high/unknown), and a concise reason (maximum 60 words).\nIf you cannot make even a regional judgment, use score:null and confidence:unknown.\nDo not manufacture site-specific species, permits, costs, dates or infrastructure.\nThe physical pipeline already handles irradiation, temperature, ice duration,\nprotected-area membership, historical drying, depth, roads, grid distance and\npopulation proximity. Do NOT rescore those measured quantities or hard exclusions.\nOnly assess the residual factor specified below. Distinguish assumptions from knowledge.\nFor scores on [0,1], 0 means strongly adverse, .25 adverse, .5 mixed, .75 favorable,\n1 strongly favorable for the specified residual factor, NOT feasible area percentages.\nYour scores will be transformed by researcher-declared scenario mappings, not treated\nas empirical observations. A reservoir is not automatically ecologically harmless.\n",
+        "prompt": "Output renewable_support and finance_delivery, each in [0,1].\nrenewable_support: general institutional support and implementation continuity for\nrenewable energy applicable to FPV, not a claim of site permission or a specific law.\nfinance_delivery: relative investment financing and project-delivery conditions,\nnot measured capex, discount rates, physical grid access, market demand or irradiance.\nAssess the stated current snapshot, not future policies. If recent developments are\nunknown, acknowledge that. Give a separate rationale for each factor.\nContext: {\"country\": \"China\", \"assessment_date\": \"2026-09-08\"}\nRequired structure: {\"renewable_support\": {\"score\": null, \"confidence\": \"unknown\", \"reason\": \"Explain the judgment and uncertainty.\"}, \"finance_delivery\": {\"score\": null, \"confidence\": \"unknown\", \"reason\": \"Explain the judgment and uncertainty.\"}}",
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "renewable_support",
+            "finance_delivery"
+          ],
+          "properties": {
+            "renewable_support": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "score",
+                "confidence",
+                "reason"
+              ],
+              "properties": {
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0.0,
+                  "maximum": 1.0
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high",
+                    "unknown"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            },
+            "finance_delivery": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "score",
+                "confidence",
+                "reason"
+              ],
+              "properties": {
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0.0,
+                  "maximum": 1.0
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high",
+                    "unknown"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "environment": {
+        "worker_sha256": "6068ab263013747f2ce546e61a94e49e9ab1f623f0ccab5459a3716509dcafa7",
+        "runner_sha256": "4baf60aca5353bb452c373bf061c1db36dc7024a3c3c785f42662e594eda1bfe",
+        "contract_sha256": "64c44e49e416035602c97cc94f30e7d2a345e02a2482edf812766b56a1308d2c",
+        "prompt_source_sha256": "431ca47ed8f28f779f00347b1cbb02a3eeed3af9547e6bfae9ea8e438033192f",
+        "entities_sha256": "18136d259355189472b50c4d2b220463cacd9563117cb81be3583c6aa2caaf71",
+        "codex_runtime": "codex-cli 0.153.4",
+        "claude_runtime": "2.1.263 (Claude Code)",
+        "sdk_versions": {
+          "openai-codex": "0.147.0",
+          "claude-agent-sdk": "0.2.152"
+        }
+      },
+      "response": {
+        "provider": "codex_subscription",
+        "sdk_version": "0.147.0",
+        "model": "gpt-6-astra",
+        "requested_model": "gpt-6-astra",
+        "resolved_model": null,
+        "model_id_source": "requested_configuration_not_independently_observed",
+        "effort": "high",
+        "final_response": "{\n  \"renewable_support\": {\n    \"score\": 0.85,\n    \"confidence\": \"medium\",\n    \"reason\": \"China's established renewable-energy priorities and sustained administrative implementation support a strongly favorable regional judgment applicable to FPV. Local implementation can vary, and general support does not imply site permission. This assumes institutional continuity; developments through September 8, 2026 are not verified.\"\n  },\n  \"finance_delivery\": {\n    \"score\": 0.75,\n    \"confidence\": \"medium\",\n    \"reason\": \"Established domestic financing channels and experienced developers and contractors suggest favorable financing and delivery conditions, particularly for state-backed sponsors. Uneven private-sponsor access and local fiscal pressures temper this judgment. Continuity is assumed; recent financing or project-delivery changes through September 8, 2026 are not verified.\"\n  }\n}",
+        "active_tool_items": [],
+        "turns": 1,
+        "turn_count_source": "one_sdk_run_requested",
+        "usage": {
+          "last": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 0,
+            "input_tokens": 11771,
+            "output_tokens": 273,
+            "reasoning_output_tokens": 87,
+            "total_tokens": 12044
+          },
+          "model_context_window": 258400,
+          "total": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 0,
+            "input_tokens": 11771,
+            "output_tokens": 273,
+            "reasoning_output_tokens": 87,
+            "total_tokens": 12044
+          }
+        },
+        "tools_exposed_empty_verified": false,
+        "settings": {
+          "sandbox": "read-only",
+          "approval": "deny-all",
+          "overrides": [
+            "forced_login_method=\"chatgpt\"",
+            "web_search=\"disabled\"",
+            "mcp_servers.codegraph.enabled=false",
+            "mcp_servers.openaiDeveloperDocs.enabled=false",
+            "features.plugins=false",
+            "features.apps=false",
+            "features.hooks=false"
+          ]
+        },
+        "status": "ok",
+        "worker_exit_code": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "status": "ok",
+      "generated_at": "2026-09-08T13:05:03.411180+00:00",
+      "source_mode": "direct_pretrained_judgment_no_retrieval",
+      "prompt_version": "fpv-separated-direct-v124-01",
+      "adapter_version": "subscription-separated-v2",
+      "scores": {
+        "renewable_support": {
+          "score": 0.85,
+          "confidence": "medium",
+          "reason": "China's established renewable-energy priorities and sustained administrative implementation support a strongly favorable regional judgment applicable to FPV. Local implementation can vary, and general support does not imply site permission. This assumes institutional continuity; developments through September 8, 2026 are not verified."
+        },
+        "finance_delivery": {
+          "score": 0.75,
+          "confidence": "medium",
+          "reason": "Established domestic financing channels and experienced developers and contractors suggest favorable financing and delivery conditions, particularly for state-backed sponsors. Uneven private-sponsor access and local fiscal pressures temper this judgment. Continuity is assumed; recent financing or project-delivery changes through September 8, 2026 are not verified."
+        }
+      },
+      "archive_role": "accepted",
+      "original_record_sha256": "206d3c3ba38e708af8acda2e654f2149babaee61e9070528706314d0cb5897f0",
+      "original_record_path": "_outputs/v124/raw_subscription/sdkpilot02/1e045276494cfa343ddd88f48c3bb85cb1e491dfc4a7efe413ad6b0e0e32bae6.json",
+      "redacted_paths": [
+        "response.raw_events"
+      ]
+    },
+    "province": {
+      "signature": "14aa599576b599c7dc9168ea7673c8fc5ead537eb1758d5c9b5a8f6f5081db90",
+      "entity_id": "province_f1403a3ed820950d0731",
+      "dimension": "province",
+      "context": {
+        "country": "China",
+        "province": "Zhejiang",
+        "assessment_date": "2026-09-08"
+      },
+      "provider": "codex",
+      "requested_model": "gpt-6-astra",
+      "repeat": 0,
+      "job": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "policy": "You assess uncertain regional conditions for a scientific floating-PV scenario.\nUse your pretrained knowledge directly; do not browse, invent citations, or claim to have\nread a policy or visited a site. No particular country is assigned a target score.\nProvide judgments, not observed facts or calibrated deployment probabilities. Return\nonly a JSON object with exactly the requested fields. Each field contains score,\nconfidence (low/medium/high/unknown), and a concise reason (maximum 60 words).\nIf you cannot make even a regional judgment, use score:null and confidence:unknown.\nDo not manufacture site-specific species, permits, costs, dates or infrastructure.\nThe physical pipeline already handles irradiation, temperature, ice duration,\nprotected-area membership, historical drying, depth, roads, grid distance and\npopulation proximity. Do NOT rescore those measured quantities or hard exclusions.\nOnly assess the residual factor specified below. Distinguish assumptions from knowledge.\nFor scores on [0,1], 0 means strongly adverse, .25 adverse, .5 mixed, .75 favorable,\n1 strongly favorable for the specified residual factor, NOT feasible area percentages.\nYour scores will be transformed by researcher-declared scenario mappings, not treated\nas empirical observations. A reservoir is not automatically ecologically harmless.\n",
+        "prompt": "Output implementation_offset in [-0.15,0.15]: residual provincial\nimplementation support relative to the country's general renewable-energy conditions.\nZero means no inferred relative difference; positive favorable, negative adverse.\nDo not reuse national conditions, grid/population distances, demand, climate or costs.\nIf provincial knowledge is unavailable return null, not zero. No future policy forecast.\nContext: {\"country\": \"China\", \"province\": \"Zhejiang\", \"assessment_date\": \"2026-09-08\"}\nRequired structure: {\"implementation_offset\": {\"score\": null, \"confidence\": \"unknown\", \"reason\": \"Explain the judgment and uncertainty.\"}}",
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "implementation_offset"
+          ],
+          "properties": {
+            "implementation_offset": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "score",
+                "confidence",
+                "reason"
+              ],
+              "properties": {
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": -0.15,
+                  "maximum": 0.15
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high",
+                    "unknown"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "environment": {
+        "claude_runtime": "2.1.263 (Claude Code)",
+        "codex_runtime": "codex-cli 0.153.4",
+        "contract_sha256": "64c44e49e416035602c97cc94f30e7d2a345e02a2482edf812766b56a1308d2c",
+        "entities_sha256": "b1908159b97a92159d3163cb9611e1a9cdb02d9e79ac0ae2ae82cdc361374e62",
+        "lean_plan_sha256": "b07ca81e6e96e12fc6dcb4e525fc8237668231fec4eabc8a0c1c9e3426fde45f",
+        "lean_runner_sha256": "db23630f5096068466ae6f036c20e47310a31e72a956074cedb890aa2283e1dd",
+        "prompt_source_sha256": "431ca47ed8f28f779f00347b1cbb02a3eeed3af9547e6bfae9ea8e438033192f",
+        "runner_sha256": "4baf60aca5353bb452c373bf061c1db36dc7024a3c3c785f42662e594eda1bfe",
+        "scheduler_sha256": "b7ece0f098b6c57a91061daff08f0b31329a2f61989b5722143ab2f6be16da33",
+        "sdk_versions": {
+          "claude-agent-sdk": "0.2.152",
+          "openai-codex": "0.147.0"
+        },
+        "worker_sha256": "6068ab263013747f2ce546e61a94e49e9ab1f623f0ccab5459a3716509dcafa7"
+      },
+      "response": {
+        "provider": "codex_subscription",
+        "sdk_version": "0.147.0",
+        "model": "gpt-6-astra",
+        "requested_model": "gpt-6-astra",
+        "resolved_model": null,
+        "model_id_source": "requested_configuration_not_independently_observed",
+        "effort": "high",
+        "final_response": "{\"implementation_offset\":{\"score\":0.06,\"confidence\":\"medium\",\"reason\":\"Zhejiang’s established experience administering distributed solar supports a modestly favorable provincial implementation judgment relative to China generally. Extending that administrative experience to floating PV is an assumption; water-use coordination and floating-PV-specific approval support remain uncertain. This does not establish policy status at the assessment date.\"}}",
+        "active_tool_items": [],
+        "turns": 1,
+        "turn_count_source": "one_sdk_run_requested",
+        "usage": {
+          "last": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 9216,
+            "input_tokens": 11720,
+            "output_tokens": 212,
+            "reasoning_output_tokens": 126,
+            "total_tokens": 11932
+          },
+          "model_context_window": 258400,
+          "total": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 9216,
+            "input_tokens": 11720,
+            "output_tokens": 212,
+            "reasoning_output_tokens": 126,
+            "total_tokens": 11932
+          }
+        },
+        "tools_exposed_empty_verified": false,
+        "settings": {
+          "sandbox": "read-only",
+          "approval": "deny-all",
+          "overrides": [
+            "forced_login_method=\"chatgpt\"",
+            "web_search=\"disabled\"",
+            "mcp_servers.codegraph.enabled=false",
+            "mcp_servers.openaiDeveloperDocs.enabled=false",
+            "features.plugins=false",
+            "features.apps=false",
+            "features.hooks=false"
+          ]
+        },
+        "status": "ok",
+        "worker_exit_code": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "status": "ok",
+      "generated_at": "2026-09-09T09:52:53.938387+00:00",
+      "source_mode": "direct_pretrained_judgment_no_retrieval",
+      "prompt_version": "fpv-separated-direct-v124-01",
+      "adapter_version": "subscription-separated-v2",
+      "scores": {
+        "implementation_offset": {
+          "score": 0.06,
+          "confidence": "medium",
+          "reason": "Zhejiang’s established experience administering distributed solar supports a modestly favorable provincial implementation judgment relative to China generally. Extending that administrative experience to floating PV is an assumption; water-use coordination and floating-PV-specific approval support remain uncertain. This does not establish policy status at the assessment date."
+        }
+      },
+      "archive_role": "accepted",
+      "original_record_sha256": "e09a78be48c7f2e488769a6d94c6286528ce0e35bf1bc867187d044537bb3bc9",
+      "original_record_path": "_outputs/v124/global/lean/recovery/recovery01/predictions/20260909T095052263351/074/14aa599576b599c7dc9168ea7673c8fc5ead537eb1758d5c9b5a8f6f5081db90.json",
+      "redacted_paths": [
+        "response.raw_events"
+      ]
+    }
+  },
+  "physical_inputs": "Not included. Example reproduces only the actual score-to-weight mappings; no invented generation, protected status or project viability."
+}

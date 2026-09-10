@@ -1,0 +1,7 @@
+Output implementation_offset in [-0.15,0.15]: residual provincial
+implementation support relative to the country's general renewable-energy conditions.
+Zero means no inferred relative difference; positive favorable, negative adverse.
+Do not reuse national conditions, grid/population distances, demand, climate or costs.
+If provincial knowledge is unavailable return null, not zero. No future policy forecast.
+Context: {{context_json}}
+Required structure: {"implementation_offset": {"score": null, "confidence": "unknown", "reason": "Explain the judgment and uncertainty."}}
